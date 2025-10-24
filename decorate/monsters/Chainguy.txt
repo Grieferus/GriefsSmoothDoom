@@ -1,0 +1,284 @@
+ACTOR SDChaingunGuy : ChaingunGuy replaces ChaingunGuy
+{
+	States
+	{
+	Spawn:
+		CPAS A 10 A_Look
+		CPAR A 10 A_Look
+		Loop
+	See:
+		CPOS ABCDEFGH 3 A_Chase
+		Loop
+	Missile:
+		CPAS A 3 A_FaceTarget
+		CPAS BC 2 A_FaceTarget
+		CPAS E 3 A_FaceTarget
+		CPAS F 2 Bright A_CPosAttack
+		CPAS E 2 A_FaceTarget
+		CPAS F 2 Bright A_CPosAttack
+		CPAS E 2 A_FaceTarget
+		CPAS E 1 A_CPosRefire
+		Goto Missile+6
+	Pain:
+		XPOS A 3
+		XPOS B 3 A_Pain
+		Goto See
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		CGUY A 3
+		CGUY B 3 A_Scream
+		CGUY C 3
+		CGUY DE 2
+		CGUY F 2 A_NoBlocking
+		CGUY GHIJKL 2
+		CGUY M -1
+		Stop
+	Death2:
+		SGUY A 3
+		SGUY B 3 A_Scream
+		SGUY C 3 A_NoBlocking
+		SGUY DEFGHIJ 3
+		SGUY K -1
+		Stop
+	Death3:
+		CDIE A 3
+		CDIE B 3 A_Scream
+		CDIE C 3 A_NoBlocking
+		CDIE DEFG 3
+		CDIE HIJK 2
+		CDIE LMNO 3
+		CDIE P -1
+		Stop
+	XDeath:
+		CGIB AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Death.Massacre:
+		CGIB AB 2
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		CGUY LKJIHGFEDCBA 3
+		Goto See
+	Raise2:
+		SGUY JIHGFEDCBA 3
+		Goto See
+	Raise3:
+		CDIE ONMKJIHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR CguyV1 : SDChaingunGuy //skully
+{
+	States
+	{
+	Spawn:
+		CSV2 A 10 A_Look
+		CRV2 A 10 A_Look
+		Loop
+	See:
+		CWV2 ABCDEFGH 3 A_Chase
+		Loop
+	Missile:
+		CSV2 A 3 A_FaceTarget
+		CSV2 BC 2 A_FaceTarget
+		CSV2 E 3 A_FaceTarget
+		CSV2 F 2 Bright A_CPosAttack
+		CSV2 E 2 A_FaceTarget
+		CSV2 F 2 Bright A_CPosAttack
+		CSV2 E 2 A_FaceTarget
+		CSV2 E 1 A_CPosRefire
+		Goto Missile+6
+	Pain:
+		CPV2 A 3
+		CPV2 B 3 A_Pain
+		Goto See
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		C1V2 A 3
+		C1V2 B 3 A_Scream
+		C1V2 C 3
+		C1V2 DE 2
+		C1V2 F 2 A_NoBlocking
+		C1V2 GHIJ 3
+		CGUY KL 3
+		CGUY M -1
+		Stop
+	Death2:
+		C2V2 A 3
+		C2V2 B 3 A_Scream
+		C2V2 C 3 A_NoBlocking
+		C2V2 DEFGH 3
+		SGUY IJ 3
+		SGUY K -1
+		Stop
+	Death3:
+		C3V2 A 3
+		C3V2 B 3 A_Scream
+		C3V2 C 3 A_NoBlocking
+		C3V2 DEFG 3
+		C3V2 HIJK 2
+		C3V2 LMNO 3
+		C3V2 P -1
+		Stop
+	XDeath:
+		CGIB AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Death.Massacre:
+		CGIB AB 2
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		CGUY LK 3
+		C1V2 JIHGFEDCBA 3
+		Goto See
+	Raise2:
+		SGUY JI 3
+		C2V2 HGFEDCBA 3
+		Goto See
+	Raise3:
+		C3V2 ONMKJIHGFEDCBA 3
+		Goto See
+		}
+}
+
+ACTOR CguyV2 : SDChaingunGuy //fritzhelm
+{
+	States
+	{
+	Spawn:
+		CSV3 A 10 A_Look
+		CRV3 A 10 A_Look
+		Loop
+	See:
+		CWV3 ABCDEFGH 3 A_Chase
+		Loop
+	Missile:
+		CSV3 A 3 A_FaceTarget
+		CSV3 BC 2 A_FaceTarget
+		CSV3 E 3 A_FaceTarget
+		CSV3 F 2 Bright A_CPosAttack
+		CSV3 E 2 A_FaceTarget
+		CSV3 F 2 Bright A_CPosAttack
+		CSV3 E 2 A_FaceTarget
+		CSV3 E 1 A_CPosRefire
+		Goto Missile+6
+	Pain:
+		CPV3 A 3
+		CPV3 B 3 A_Pain
+		Goto See
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		C1V3 A 3
+		C1V3 B 3 A_Scream
+		C1V3 C 3
+		C1V3 DE 2
+		C1V3 F 2 A_NoBlocking
+		C1V3 GHIJKL 3
+		CGUY M -1
+		Stop
+	Death2:
+		C2V3 A 3
+		C2V3 B 3 A_Scream
+		C2V3 C 3 A_NoBlocking
+		C2V3 DEFGH 3
+		SGUY IJ 3
+		SGUY K -1
+		Stop
+	Death3:
+		C3V3 A 3
+		C3V3 B 3 A_Scream
+		C3V3 C 3 A_NoBlocking
+		C3V3 DEFG 3
+		C3V3 HIJK 2
+		C3V3 LMNO 3
+		C3V3 P -1
+		Stop
+	XDeath:
+		CGIB AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Death.Massacre:
+		CGIB AB 2
+		CGIB C 2 A_XScream
+		CGIB DE 2
+		CGIB F 2 A_NoBlocking
+		CGIB GHIJ 2
+		CGIB K -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		C1V3 LKJIHGFEDCBA 3
+		Goto See
+	Raise2:
+		SGUY JI 3
+		C2V3 HGFEDCBA 3
+		Goto See
+	Raise3:
+		C3V3 ONMKJIHGFEDCBA 3
+		Goto See
+	}
+}

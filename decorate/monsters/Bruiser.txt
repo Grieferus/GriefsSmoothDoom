@@ -1,0 +1,233 @@
+ACTOR SDBaronOfHell : BaronOfHell Replaces BaronOfHell
+{
+	+BOSSDEATH
+	Bloodtype Greenblood
+	BloodColor "53 AF 47"
+	GibHealth 60
+	States
+	{
+	Spawn:
+		BARI AB 10 A_Look
+		Loop
+	See:
+		BOS1 ABCDEFGH 3 A_Chase
+		Loop
+	Melee:
+		ZBOS DCBA 1 A_FaceTarget
+		ZBOS BCDE 2 A_FaceTarget
+		ZBOS F 3 A_CustomMeleeAttack(random(1,8),"baron/melee")
+		ZBOS E 5
+		Goto See
+	Missile:
+		ZBOS DCB 1 A_FaceTarget
+		ZBOS A 3 A_FaceTarget
+		ZBOS ABCDE 2 A_FaceTarget
+		ZBOS F 3 A_CustomMissile("SDBaronBall",32,10)
+		ZBOS E 5
+		Goto See
+	Pain:
+		BARP A 2
+		BARP B 2 A_Pain
+		Goto See
+	Crush:
+		PL36 A -1 A_PlaySound("gib/squish")
+		Stop
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		BSDS AB 3
+		BSDS C 3 A_Scream
+		BSDS DEFG 3
+		BSDS H 3 A_NoBlocking
+		BSDS IJKL 3
+		BSDS M -1 A_BossDeath
+		Stop
+	Death2:
+		BS1N AB 3
+		BS1N C 3 A_Scream
+		BS1N DEFG 3 
+		BS1N H 3 A_NoBlocking
+		BS1N IJK 3 
+		BS1N L -1 A_BossDeath
+		Stop
+	Death3:
+		BS1O AB 3
+		BS1O C 3 A_Scream
+		BS1O DEFG 3
+		BS1O H 3 A_NoBlocking
+		BS1O IJ 3
+		BS1O K -1 A_BossDeath
+		Stop
+	XDeath:
+		BSDS ABC 2
+		XBAR A 2 A_XScream
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GreenGoreController")
+		XBAR BCDEFGH 2
+		XBAR I 2 A_NoBlocking
+		XBAR JKLMNOP 2
+		XBAR Q -1 A_BossDeath
+		Stop
+	Death.Massacre:
+		BSDS ABC 2
+		XBAR A 2 A_XScream
+		XBAR BCDEFGH 2
+		XBAR I 2 A_NoBlocking
+		XBAR JKLMNOP 2
+		XBAR Q -1 A_BossDeath
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		BSDS LKJIHGFEDCBA 3
+		Goto See
+	Raise2:
+		BS1N LKJIHGFEDCBA 3
+		Goto See
+	Raise3:
+		BS1O JIHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR SDHellKnight: HellKnight Replaces HellKnight
+{
+	Game Doom
+	SpawnID 113
+	Health 500
+	Bloodtype Greenblood
+	BloodColor "53 AF 47"
+	GibHealth 60
+	-BOSSDEATH
+	SeeSound "knight/sight"
+	ActiveSound "knight/active"
+	PainSound "knight/pain"
+	DeathSound "knight/death"
+	HitObituary "$OB_KNIGHTHIT"
+	Obituary "$OB_KNIGHT"
+	States
+	{
+	Spawn:
+		KNII AB 10 A_Look 
+		Loop
+	See:
+		BOS2 ABCDEFGH 3 A_Chase
+		Loop
+	Melee:
+		SBOS DCBA 1 A_FaceTarget
+		SBOS BCDE 2 A_FaceTarget
+		SBOS F 3 A_CustomMeleeAttack(random(1,8),"baron/melee")
+		SBOS E 5
+		Goto See
+	Missile:
+		SBOS DCB 1 A_FaceTarget
+		SBOS A 3 A_FaceTarget
+		SBOS ABCDE 2 A_FaceTarget
+		SBOS F 3 A_CustomMissile("SDBaronBall",32,10)
+		SBOS E 5
+		Goto See
+	Pain:
+		PKNI A 2
+		PKNI B 2 A_Pain
+		Goto See
+	Crush:
+		PL36 A -1 A_PlaySound("gib/squish")
+		Stop
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		SKNI AB 3
+		SKNI C 3 A_Scream
+		SKNI DEFG 3
+		SKNI H 3 A_NoBlocking
+		SKNI IJKL 3
+		SKNI M -1
+		Stop
+	Death2:
+		BS2N AB 3
+		BS2N C 3 A_Scream
+		BS2N DEFG 3 
+		BS2N H 3 A_NoBlocking
+		BS2N IJK 3 
+		BS2N L -1
+		Stop
+	Death3:
+		BS2O AB 3
+		BS2O C 3 A_Scream
+		BS2O DEFG 3
+		BS2O H 3 A_NoBlocking
+		BS2O I 3
+		BS2O J -1
+		Stop
+	XDeath:
+		SKNI ABC 2
+		XKNI A 2 A_XScream
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GreenGoreController")
+		XKNI BCDEFGH 2
+		XKNI I 2 A_NoBlocking
+		XKNI JKLMNOP 2
+		XKNI Q -1
+		Stop
+	Death.Massacre:
+		SKNI ABC 2
+		XKNI A 2 A_XScream
+		XKNI BCDEFGH 2
+		XKNI I 2 A_NoBlocking
+		XKNI JKLMNOP 2
+		XKNI Q -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		SKNI LKJIHGFEDCBA 3
+		Goto See
+	Raise2:
+		BS2N LKJIHGFEDCBA 3
+		Goto See
+	Raise3:
+		BS2O JIHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR SDBaronBall : BaronBall replaces BaronBall
+{
+	decal baronscorch
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancySpawn")
+		BAL7 ABCDCB 4 Bright
+		Loop
+	FancySpawn:
+		BAL7 ABCDCB 2 Bright A_SpawnItemEx("GreenSparkle", random(-20, 20), random(-20, 20), random(0, 20))
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		BOOG ABCDEFGHI 2 Bright
+		Stop
+	FancyDeath:
+		TNT1 AAAAAA 0 A_SpawnItemEx("GreenSparkle", 0, 0, 0, random(-2, 2), random(-2, 2), random(-1, 2), random(0, 360))
+		BOOG ABCDEFGHI 2 Bright
+		Stop
+	}
+}

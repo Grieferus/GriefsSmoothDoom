@@ -1,0 +1,10 @@
+ACTOR SDSpawnShot: SpawnShot replaces SpawnShot
+{
+	States
+	{
+	Spawn:
+		SCUB A 2 A_SpawnSound
+		SCUB BCDEF 2 A_SpawnFly
+		Loop
+	}
+}

@@ -1,0 +1,134 @@
+ACTOR SDFatso : Fatso replaces Fatso
+{
+	GibHealth 50
+	States
+	{
+	Spawn:
+		FAPP AB 10 A_Look
+		Loop
+	See:
+		CRIS AABCDEFFGHIJ 4 A_Chase
+		Loop
+	Missile:
+		FATA A 17 A_Fatraise
+		FATA B 3
+		FATA C 3 Bright A_FatAttack1
+		FATA D 3 Bright
+		FATA E 4
+		FATA A 7
+		FATA B 3
+		FATA C 3 Bright A_FatAttack2
+		FATA D 3 Bright
+		FATA E 4
+		FATA A 7
+		FATA B 3
+		FATA C 3 Bright A_FatAttack3
+		FATA D 3 Bright
+		FATA E 4
+		FATA A 10
+		Goto See
+	Pain:
+		FAPP A 3
+		FAPP B 3 A_Pain
+		Goto See
+	Crush:
+		PL16 A -1 A_PlaySound("gib/squish")
+		Stop
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		SMAN A 3
+		SMAN B 3 A_Scream
+		SMAN CDE 3
+		SMAN F 3 A_NoBlocking
+		SMAN GHIJKLMNOP 3
+		SMAN Q -1 A_BossDeath
+		Stop
+	Death2:
+		MANN A 4
+		MANN B 4 A_Scream
+		MANN CD 4
+		MANN E 4 A_NoBlocking
+		MANN FGHIJK 4
+		MANN L -1 A_BossDeath
+		Stop
+	Death3:
+		MANO A 4
+		MANO B 4 A_Scream
+		MANO CD 4
+		MANO E 4 A_NoBlocking
+		MANO FGHI 4 
+		MANO J -1 A_BossDeath
+		Stop
+	XDeath:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, "Death.Massacre")
+		FAXD A 3 A_XScream
+		FAXD B 3
+		TNT1 A 0 A_SpawnItemEx("SmallGoreController")
+		FAXD C 3
+		TNT1 A 0 A_SpawnItemEx("SmallGoreController")
+		FAXD D 3 A_NoBlocking
+		FAXD E 3
+		TNT1 A 0 A_SpawnItemEx("BigGoreController")
+		FAXD FGH 3
+		FAXD IJKLMNO 2
+		FAXD P -1 A_BossDeath
+		Stop
+	Death.Massacre:
+		FAXD A 3 A_XScream
+		FAXD BC 3
+		FAXD D 3 A_NoBlocking
+		FAXD EFGH 3
+		FAXD IJKLMNO 2
+		FAXD P -1 A_BossDeath
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		SMAN PONMLKJIHGFEDCBA 3
+		Goto See
+	Raise2:
+		MANN KJIHGFEDCBA 3
+		Goto See
+	Raise3:
+		MANO IHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR SDFatShot : FatShot replaces FatShot
+{
+	decal scorch
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancySpawn")
+		MANF ABCD 2 Bright
+		Loop
+	FancySpawn:
+		MANF A 2 Bright
+		TNT1 A 0 A_SpawnItemEx("SDSmoke",-8,random(-3,3),random(2,6))
+		MANF B 2 Bright
+		MANF C 2 Bright 
+		TNT1 A 0 A_SpawnItemEx("SDSmoke",-8,random(-3,3),random(2,6))
+		MANF D 2 Bright
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		EXPL ABCDEFGHI 2 Bright
+		Stop
+	FancyDeath:
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("ExplosionParticles",random(-1,1),random(-1,1),random(-1,1),random(-4,4),random(-4,4),random(0,6),random(0,360))
+		EXPL ABCDEFGHI 2 Bright
+		Stop
+	}
+}

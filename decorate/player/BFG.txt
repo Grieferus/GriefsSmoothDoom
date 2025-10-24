@@ -1,0 +1,86 @@
+ACTOR SDBFG9000 : BFG9000 replaces BFG9000
+{
+	Weapon.BobStyle Alpha
+	States
+	{
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Recoil")==1, "RecoilFire")
+		BFGG A 20 A_BFGSound
+		TNT1 A 0 A_GunFlash
+		BFGG A 2
+		BFGN A 8
+		SBFG D 2 A_FireBFG
+		SBFG EDCB 2
+		BFGG A 20 A_ReFire
+		goto Ready
+	RecoilFire:
+		BFGG A 20 A_BFGSound
+		TNT1 A 0 A_GunFlash
+		BFGG A 2
+		BFGN A 8
+		SBFG D 1 A_FireBFG
+		SBFG D 1 a_setpitch(pitch-2.0)
+		SBFG E 1 a_setpitch(pitch-1.6)
+		SBFG E 1 a_setpitch(pitch+0.6)
+		SBFG D 1 a_setpitch(pitch+0.6)
+		SBFG D 1 a_setpitch(pitch+0.6)
+		SBFG C 1 a_setpitch(pitch+0.6)
+		SBFG C 1 a_setpitch(pitch+0.4)
+		SBFG B 1 a_setpitch(pitch+0.4)
+		SBFG B 1 a_setpitch(pitch+0.4)
+		BFGG A 20 A_ReFire
+		goto Ready
+	Flash:
+		BFGW A 2 bright
+		BFGX HGFE 1 bright A_Light2
+		BFGX DCBA 1 bright A_Light2
+		TNT1 A 0 A_Light0
+		Goto LightDone
+	}
+}
+
+ACTOR SDBFGBall : BFGBall replaces BFGBall
+{
+decal BFGlightning
+States
+{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancySpawn")
+		FUCK ABCDEFGH 2 Bright
+		Loop
+	FancySpawn:
+		FUCK ABCDEFGH 2 Bright A_SpawnItemEx("GreenSparkle", random(-40, 40), random(-40, 40), random(0, 30))
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		EXPL D 0 A_Quake (3,10,0,750,0)
+		EXPL D 0 A_Quake (1,25,0,1000,0)
+		BFGB ABCDE 2 Bright
+		BFGB F 1 Bright
+		BFGB F 3 Bright a_BFGspray
+		BFGB GHIJK 3 Bright
+		Stop
+	FancyDeath:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		EXPL D 0 A_Quake (3,10,0,750,0)
+		EXPL D 0 A_Quake (1,25,0,1000,0)
+		BFGB ABC 3 Bright A_SpawnItemEx("GreenGlimmer", random(-50, 50), random(-50, 50), random(-0, 40),random(-2,2),random(-2,2),random(-2,2))
+		BFGB DE 3 Bright
+		BFGB F 4 Bright a_BFGspray
+		BFGB GH 3 Bright A_SpawnItemEx("GreenGlimmer", random(-60, 60), random(-60, 60), random(0, 20))
+		BFGB IJK 3 Bright
+		TNT1 AAAAAA 0 A_SpawnItemEx("GreenSparkle", random(-70, 70), random(-70, 70), random(0, 50))
+		Stop
+	}
+}
+
+ACTOR SDBFGExtra : BFGExtra replaces BFGExtra
+{
+	States
+	{
+	Spawn:
+		BFEX ABCDEFGHIJKLMNO 2 Bright
+		Stop
+	}
+}

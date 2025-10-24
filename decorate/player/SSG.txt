@@ -1,0 +1,91 @@
+ACTOR SDSuperShotgun : SuperShotgun replaces SuperShotgun
+{
+	Weapon.BobStyle Alpha
+	decal bulletchip
+	States
+	{
+	Ready:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLReady")
+		PKS2 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLDeselect")
+		PKS2 A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLSelect")
+		PKS2 A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLfire")
+		PKS2 A 3
+		TNT1 A 0 A_PlaySound ("weapons/sshotf", CHAN_WEAPON)
+		TNT1 A 0 A_FireBullets (11.2, 7.1, 20, 5, "BulletPuffGibby")
+		TNT1 A 0 A_GunFlash
+		PKS2 A 2
+		PKSS BCDCB 1
+		PKSS B 0 A_Checkreload
+		PKS2 BCDE 1
+		PKS2 FG 2
+		PKS2 H 3
+		PKS2 GFE 1
+		PKS2 I 1 A_PlaySound("weapons/sshoto", 4)
+		PKS2 JK 1
+		PKS2 L 3
+		PKS2 MNOP 2
+		PKS2 Q 3 A_PlaySound("weapons/sshotl", 4)
+		PKS2 RSTU 1
+		PKS2 VWX 2
+		PKS2 Y 2 A_PlaySound("weapons/sshotc", 4)
+		PKS2 Z 2
+		PKSS A 2
+		PKS2 A 5 A_ReFire
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Recoil")==1, "KickFlash")
+		SHT2 J 1 Bright A_Light2
+		SHT2 I 1 Bright A_Light1
+		Goto LightDone
+	KickFlash:
+		SHT2 J 1 Bright A_Light2
+		SHT2 I 1 Bright A_Light1
+		TNT1 A 1 A_SetPitch(pitch-4.0)
+		TNT1 AAAAAAAAAA 1 A_SetPitch(pitch+0.4)
+		Goto LightDone
+	BLReady:
+		BKS2 A 1 A_WeaponReady
+		Loop
+	BLDeselect:
+		BKS2 A 1 A_Lower
+		Loop
+	BLSelect:
+		BKS2 A 1 A_Raise
+		Loop
+	BLFire:
+		BKS2 A 3
+		TNT1 A 0 A_PlaySound ("weapons/sshotf", CHAN_WEAPON)
+		TNT1 A 0 A_FireBullets (11.2, 7.1, 20, 5, "BulletPuffGibby")
+		TNT1 A 0 A_GunFlash
+		BKS2 A 2
+		BKSS BCDCB 1
+		BKSS B 0 A_Checkreload
+		BKS2 BCDE 1
+		BKS2 FG 2
+		BKS2 H 3
+		BKS2 GFE 1
+		BKS2 I 1 A_PlaySound("weapons/sshoto", 4)
+		BKS2 J 1
+		PKS2 K 1
+		PKS2 L 3
+		BKS2 MNOP 2
+		BKS2 Q 3 A_PlaySound("weapons/sshotl", 4)
+		BKS2 RST 1
+		PKS2 U 1
+		BKS2 VWX 2
+		BKS2 Y 2 A_PlaySound("weapons/sshotc", 4)
+		BKS2 Z 2
+		BKSS A 2
+		BKS2 A 5 A_ReFire
+		Goto Ready
+	}
+}

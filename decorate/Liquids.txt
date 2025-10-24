@@ -1,0 +1,194 @@
+ACTOR WaterChunk2
+{
+	Radius 2
+	Height 4
+	+NOBLOCKMAP 
+	+MISSILE 
+	+DROPOFF
+	+NOTELEPORT
+	+CANNOTPUSH
+	+DONTSPLASH
+	+DONTBLAST
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		SPSH ABC 8
+		SPSH D 16
+		Stop
+	Death:
+		SPSH D 10
+		Stop
+	}
+}
+
+ACTOR WaterSplashBase2
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	+DONTBLAST
+	States
+	{
+	Spawn:
+		SPSH EFGHIJK 3
+		Stop
+	}
+}
+
+////////////////////////Blood
+
+ACTOR BloodChunk
+{
+	Radius 2
+	Height 4
+	+NOBLOCKMAP 
+	+MISSILE 
+	+DROPOFF
+	+NOTELEPORT
+	+CANNOTPUSH
+	+DONTSPLASH
+	+DONTBLAST
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		BSPH ABC 8
+		BSPH D 16
+		Stop
+	Death:
+		BSPH D 10
+		Stop
+	}
+}
+
+ACTOR BloodSplashBase2
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	+DONTBLAST
+	States
+	{
+	Spawn:
+		BSPH EFGH 3
+		Stop
+	}
+}
+
+/////////////////// Nukage
+
+ACTOR nukageSplashBase
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	+DONTBLAST
+	States
+	{
+	Spawn:
+		SLIM EFGH 3
+		Stop
+	}
+}
+
+ACTOR NukageChunk
+{
+	Radius 2
+	Height 4
+	+NOBLOCKMAP 
+	+MISSILE 
+	+DROPOFF
+	+NOTELEPORT
+	+CANNOTPUSH
+	+DONTSPLASH
+	+DONTBLAST
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		SLIM ABC 8
+		SLIM D 16
+		Stop
+	Death:
+		SLIM D 10
+		Stop
+	}
+}
+
+/////////////////// Slime
+
+ACTOR SlimeSplashBase
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	+DONTBLAST
+	States
+	{
+	Spawn:
+		SLDG EFGH 3
+		Stop
+	}
+}
+
+ACTOR SlimeChunk2
+{
+	Radius 2
+	Height 4
+	+NOBLOCKMAP 
+	+MISSILE 
+	+DROPOFF
+	+NOTELEPORT
+	+CANNOTPUSH
+	+DONTSPLASH
+	+DONTBLAST
+	+LOWGRAVITY
+	States
+	{
+	Spawn:
+		SLDG ABC 8
+		SLDG D 16
+		Stop
+	Death:
+		SLDG D 10
+		Stop
+	}
+}
+
+/////////////////// Lava
+
+ACTOR LavaSplash2
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	+DONTBLAST
+	States
+	{
+	Spawn:
+		LVAS ABCDEF 3
+		Stop
+	}
+}
+
+ACTOR LavaSmoke2
+{
+	+NOBLOCKMAP
+	+NOCLIP
+	+NOGRAVITY
+	+DONTSPLASH
+	Renderstyle Translucent
+	DefaultAlpha
+	States
+	{
+	Spawn:
+		SMOK ACEGI 3
+		Stop
+	}
+}

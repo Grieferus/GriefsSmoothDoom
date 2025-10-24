@@ -1,0 +1,74 @@
+ACTOR SDDoomPlayer : Doomplayer replaces Doomplayer
+{
+	Player.StartItem "SDPistol"
+	Player.StartItem "SDFist"
+	Player.StartItem "Clip", 50
+	Player.WeaponSlot 1, SDFist, SDChainsaw
+	Player.WeaponSlot 2, SDPistol, SDRifle
+	Player.WeaponSlot 3, SDShotgun, SDSuperShotgun
+	Player.WeaponSlot 4, SDChaingun
+	Player.WeaponSlot 5, SDRocketLauncher
+	Player.WeaponSlot 6, SDPlasmaRifle
+	Player.WeaponSlot 7, SDBFG9000
+	Player.ViewHeight 48
+	States
+	{
+	Spawn:
+		PLAY A -1
+		Loop
+	See:
+		PLA1 ABCDEFGHIJ 2
+		Loop
+	Melee:
+		PLA1 KLM 1
+		PLA1 N 1 Bright
+		PLA1 ML 1
+		Goto Spawn
+	Missile:
+		PLA1 KLMMLL 1
+		Goto Spawn
+	Pain:
+		PLA1 O 4
+		PLA1 O 4 A_Pain
+		Goto Spawn
+	Death:
+		PD71 A 3
+		PD71 B 3 A_PlayerScream
+		PD71 C 3 A_NoBlocking
+		PD71 DEFGHIJKLMNOP 3
+		PD71 Q -1
+		Stop
+	XDeath:
+		PLGB AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		PLGB CD 2 A_XScream
+		PLGB E 2 A_NoBlocking
+		PLGB FGHIJKLMNOP 2
+		PLGB Q -1
+		Stop
+	Death.Massacre:
+		PLGB AB 2
+		PLGB CD 2 A_XScream
+		PLGB E 2 A_NoBlocking
+		PLGB FGHIJKLMNOP 2
+		PLGB Q -1
+		Stop
+		
+	}
+}
+
+ACTOR SDBerserk : Berserk replaces Berserk
+{
+	States
+	{
+	Spawn:
+		PSTR A -1
+		stop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength")
+		TNT1 A 0 HealThing(100, 0)
+		TNT1 A 0 A_SelectWeapon("SDFist")
+		Stop
+	}
+}

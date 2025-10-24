@@ -1,0 +1,15 @@
+#library "Friction"
+#include "zcommon.acs"
+
+Script "High Friction" Enter
+{
+	While(1)
+	{
+	SetActorProperty(0, APROP_Friction, 0.9);
+	if (GetPlayerInput(-1, INPUT_FORWARDMOVE) || GetPlayerInput(-1, INPUT_SIDEMOVE))
+	{
+		SetActorProperty(0, APROP_Friction, 1.0);
+		}
+	Delay(1);
+	}
+}

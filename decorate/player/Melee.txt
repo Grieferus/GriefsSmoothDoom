@@ -1,0 +1,105 @@
+ACTOR SDFist : Fist replaces Fist
+{
+	Weapon.BobStyle Alpha
+	States
+	{
+	Ready:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLReady")
+		PKFS A 1 A_WeaponReady
+		Loop
+	DeSelect:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLDeSelect")
+		PKFS A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLSelect")
+		PKFS A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLfire")
+		PKFS NBCD 1
+		PKFS E 2 A_Punch
+		PKFS F 2
+		PKFS GHIJKCLMN 1
+		PKFS A 5 A_ReFire
+		Goto Ready
+	BLReady:
+		BKFS A 1 A_WeaponReady
+		Loop
+	BLDeSelect:
+		BKFS A 1 A_Lower
+		Loop
+	BLSelect:
+		BKFS A 1 A_Raise
+		Loop
+	BLFire:
+		BKFS NBCD 1
+		BKFS E 2 A_Punch
+		BKFS F 2
+		BKFS GHIJKCLMN 1
+		BKFS A 5 A_ReFire
+		Goto Ready
+	}
+}
+
+
+ACTOR SDChainsaw : Chainsaw replaces Chainsaw
+{
+	Weapon.BobStyle Alpha
+	States
+	{
+	Ready:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLReady")
+		TNT1 A 0 A_StopSound(1)
+		TNT1 A 0 A_PlaySound("weapons/sawidle", 2, TRUE)
+		SAWG CDED 2 A_WeaponReady
+		Loop
+	DeSelect:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLDeSelect")
+		SAWG C 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLSelect")
+		SAWG C 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLfire")
+		SAWN ABC 1
+		TNT1 A 0 A_PlaySound("weapons/sawfull", 1, TRUE)
+		TNT1 A 0 A_StopSound(2)
+		SAWS A 1 A_Saw("","",0,"XtremeSawPuff")
+		SAWS BCD 1
+		SAWN CBA 1 A_ReFire
+		Goto Ready
+	Hold:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLhold")
+		TNT1 A 0 A_PlaySound("weapons/sawfull", 1, TRUE)
+		TNT1 A 0 A_StopSound(2)
+		SAWS A 1 A_Saw("","",0,"XtremeSawPuff")
+		SAWS BCD 1
+		SAWN CBA 1 A_ReFire
+		Goto Ready
+	BLReady:
+		TNT1 A 0 A_StopSound(1)
+		TNT1 A 0 A_PlaySound("weapons/sawidle", 2, TRUE)
+		BAWG CDED 2 A_WeaponReady 
+		Loop
+	BLDeSelect:
+		BAWG C 1 A_Lower
+		Loop
+	BLSelect:
+		BAWG C 1 A_Raise
+		Loop
+	BLFire:
+		BAWN ABC 1
+		BAWS A 1 A_Saw("weapons/sawfull","weapons/sawhit",0,"XtremeSawPuff")
+		BAWS BCD 1
+		BAWN CBA 1 A_ReFire
+		Goto Ready
+	BLHold:
+		BAWS A 1 A_Saw("weapons/sawfull","weapons/sawhit",0,"XtremeSawPuff")
+		BAWS BCD 1
+		BAWN CBA 1 A_ReFire
+		Goto Ready
+	}
+}

@@ -1,0 +1,37 @@
+ACTOR SDPainElemental : PainElemental replaces PainElemental
+{
+	States
+	{
+	Spawn:
+		PAII A 10 A_Look
+		Loop
+	See:
+		SAIN ABCDEDCB 3 A_Chase
+		Loop
+	Missile:
+		PATT ABC 3 A_FaceTarget
+		PATT D 3 Bright A_FaceTarget
+		PATT E 2 Bright A_FaceTarget
+		PATT E 1 Bright A_PainAttack
+		Goto See
+	Pain:
+		PPPP A 4
+		PPPP B 2
+		PPPP B 2 A_Pain
+		PPPP C 4 A_Pain
+		Goto See
+	Death:
+		SPAI ABC 3 Bright
+		SPAI D 3 Bright A_Scream
+		SPAI EF 3 Bright
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_PainGore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("PainElementalGoreController")
+		SPAI GHI 3 Bright
+		SPAI J 3 Bright A_PainDie
+		SPAI KLMN 3 Bright
+		Stop
+	Raise:
+		SPAI NMLKJIHGFEDCBA 3
+		Goto See
+	}
+}

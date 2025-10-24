@@ -1,0 +1,336 @@
+ACTOR SDExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
+{
+	PainChance 256
+	States
+	{
+	Spawn:
+		BAR1 ABCDEFGHIJKL 3
+		Loop
+	Pain:
+		SEXP B 7
+		BAR1 I 2
+		BAR1 A 3
+		SEXP B 5
+		Goto Spawn
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		TNT1 A 0 A_Quake (2,3,0,600,0)
+		TNT1 A 0 A_Quake (1,7,0,1000,0)
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		BAR1 I 5 Bright
+		SEXP B 5 A_Scream
+		SEXP CD 3 Bright
+		SEXP E 3 Bright A_Explode
+		SEXP FGHIJK 2 Bright
+		TNT1 A 1050 Bright A_BarrelDestroy
+		TNT1 A 5 A_ReSpawn
+	FancyDeath:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		TNT1 A 0 A_Quake (2,3,0,600,0)
+		TNT1 A 0 A_Quake (1,7,0,1000,0)
+		BAR1 I 5 Bright
+		SEXP B 5 A_Scream
+		SEXP CD 3 Bright
+		SEXP E 3 Bright A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("ExplosionParticles",random(-1,1),random(-1,1),random(-1,1),random(-4,4),random(-4,4),random(0,6),random(0,360))
+		TNT1 AA 0 A_SpawnItemEx("SDSmoke",random(-1,1),random(-1,1),random(-1,1),random(-4,4),random(-4,4),random(0,6),random(0,360))
+		SEXP FGHIJK 2 Bright
+		TNT1 A 1050 Bright A_BarrelDestroy
+		TNT1 A 5 A_ReSpawn
+	}
+}
+
+ACTOR SDGreenArmor : GreenArmor replaces GreenArmor
+{
+	States
+	{
+	Spawn:
+		GARM ABC 2 Bright
+		GARM DEFGHGFED 2
+		GARM CB 2 Bright
+		Loop
+	}
+}
+
+ACTOR SDBlueArmor : BlueArmor replaces BlueArmor
+{
+	States
+	{
+	Spawn:
+		BLAR ABC 2 Bright
+		BLAR DEFGHGFED 2
+		BLAR CB 2 Bright
+		Loop
+	}
+}
+
+ACTOR SDHealthBonus : HealthBonus replaces HealthBonus
+{
+	States
+	{
+	Spawn:
+		BONU ABCDEFGFEDCB 3
+		Loop
+	}
+}
+
+ACTOR SDArmorBonus : ArmorBonus replaces ArmorBonus
+{
+	States
+	{
+	Spawn:
+		HELB ABCDEFGFEDCB 3
+		Loop
+	}
+}
+
+ACTOR SDSoulSphere : SoulSphere replaces SoulSphere
+{
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		ZOUL ABCDEFGHIJIHGFEDCB 2 Bright
+		Loop
+	}
+}
+
+ACTOR SDMegaSphere : MegaSphere replaces MegaSphere
+{
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		SMEG ABCDEFGHIJIH 3 Bright
+		Loop
+	}
+}
+
+ACTOR SDBlurSphere : BlurSphere replaces BlurSphere
+{
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		NVIS ABCDEFGFEDCB 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere
+{
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		NVUL ABCDEFEDCB 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDAllMap : AllMap replaces AllMap
+{
+	States
+	{
+	Spawn:
+		CMAP ABCDEFGH 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDRedCard : RedCard replaces RedCard
+{
+	States
+	{
+	Spawn:
+		RDCK AB 4
+		RDCK CD 4 Bright
+		RDCK EF 4
+		RDCK GH 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDBlueCard : BlueCard replaces BlueCard
+{
+	States
+	{
+	Spawn:
+		BLCK AB 4
+		BLCK CD 4 Bright
+		BLCK EF 4
+		BLCK GH 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDYellowCard : YellowCard replaces YellowCard
+{
+	States
+	{
+	Spawn:
+		YLCK AB 4
+		YLCK CD 4 Bright
+		YLCK EF 4
+		YLCK GH 4 Bright
+		Loop
+	}
+}
+
+ACTOR SDRedSkull : RedSkull replaces RedSkull
+{
+	States
+	{
+	Spawn:
+		RDSK A 6
+		RDSK BC 2
+		RDSK D 6 Bright
+		RDSK CB 2
+		Loop
+	}
+}
+
+ACTOR SDBlueSkull : BlueSkull replaces BlueSkull
+{
+	States
+	{
+	Spawn:
+		BLSK A 6
+		BLSK BC 2
+		BLSK D 6 Bright
+		BLSK CB 2
+		Loop
+	}
+}
+
+ACTOR SDYellowSkull : YellowSkull replaces YellowSkull
+{
+	States
+	{
+	Spawn:
+		YLSK A 6
+		YLSK BC 2
+		YLSK D 6 Bright
+		YLSK CB 2
+		Loop
+	}
+}
+
+ACTOR SDClip : Clip replaces Clip
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Items")==0, "Spawn1")
+		TNT1 A 0 A_Jump(256, "Spawn1", "Spawn2", "Spawn3")
+	Spawn1:
+		CLIP A -1
+		Stop
+	Spawn2:
+		CLIP B -1
+		Stop
+	Spawn3:
+		CLIP C -1
+		Stop
+	}
+}
+
+ACTOR SDClipBox : ClipBox replaces ClipBox
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Items")==0, "Spawn1")
+		TNT1 A 0 A_Jump(256, "Spawn1", "Spawn2")
+	Spawn1:
+		AMMO A -1
+		Stop
+	Spawn2:
+		AMMO B -1
+		Stop
+	}
+}
+
+ACTOR SDRocketBox : RocketBox replaces RocketBox
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Items")==0, "Spawn1")
+		TNT1 A 0 A_Jump(256, "Spawn1", "Spawn2")
+	Spawn1:
+		BROK A -1
+		Stop
+	Spawn2:
+		BROK B -1
+		Stop
+	}
+}
+
+ACTOR SDCell : Cell replaces Cell
+{
+	States
+	{
+	Spawn:
+		SCEL ABCD 3
+		SCEL E 9
+		SCEL DCB 3
+		Loop
+	}
+}
+
+ACTOR SDCellPack : CellPack replaces CellPack
+{
+	States
+	{
+	Spawn:
+		SCLP ABCDEF 3
+		SCLP G 9
+		SCLP FEDCB 3
+		Loop
+	}
+}
+
+ACTOR SDBackpack : Backpack replaces Backpack
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Items")==0, "Spawn1")
+		TNT1 A 0 A_Jump(256, "Spawn1", "Spawn2")
+	Spawn1:
+		BPAK A -1
+		Stop
+	Spawn2:
+		BPAK B -1
+		Stop
+	}
+}
+
+ACTOR SDRocketAmmo : RocketAmmo replaces RocketAmmo
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Items")==0, "Spawn1")
+		TNT1 A 0 A_Jump(256, "Spawn1", "Spawn2")
+	Spawn1:
+		ROCK A -1
+		Stop
+	Spawn2:
+		ROCK B -1
+		Stop
+	}
+}
+
+ACTOR SDInfraRed : InfraRed replaces InfraRed
+{
+	States
+	{
+	Spawn:
+		SVIS ABCD 1
+		SVIS EFGF 1 Bright
+		SVIS EDCB 1
+		Loop
+	}
+}

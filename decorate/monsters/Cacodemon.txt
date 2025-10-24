@@ -1,0 +1,125 @@
+ACTOR SDCacodemon : Cacodemon replaces Cacodemon
+{
+	Bloodtype Blueblood
+	Bloodcolor "00 00 FF"
+	GibHealth 50
+	States
+	{
+	Spawn:
+		HEA1 AAAAA 10 A_Look
+		HEA1 B 5 A_Look
+		HEA1 C 5
+		HEA1 B 5 A_Look
+		Loop
+	See:
+		HEA1 AAAAAAAAAA 3 A_Chase
+		HEA1 BCB 3 A_Chase
+		Loop
+	Melee:
+		HEA2 AABCD 2 A_FaceTarget
+		HEA2 E 2 A_CustomMeleeAttack(random(1,6),"caco/melee")
+		HEA2 CCA 1
+		Goto See
+	Missile:
+		HEAA AABCD 1 A_FaceTarget
+		HEAA E 2 Bright A_CustomMissile("SDCacodemonBall",24,0,0,0)
+		HEAA DCBA 2
+		Goto See
+	Pain:
+		HEAA F 3
+		HEAA G 3 A_Pain
+		HEAA HGF 2
+		Goto See
+	Crush:
+		PL26 A -1 A_PlaySound("gib/squish")
+		Stop
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2")
+	Death1:
+		HEAA FGH 3
+		HDSD A 3
+		HDSD B 3 A_Scream
+		HDSD CD 3
+		HDSD E 3 A_NoBlocking
+		HDSD F 3 A_SetFloorClip
+		HDSD GHI 3
+		HDSD J -1
+		Stop
+	Death2:
+		HEAA FGH 3
+		HDD2 A 3
+		HDD2 B 3 A_Scream
+		HDD2 CD 3
+		HDD2 E 3 A_NoBlocking
+		HDD2 F 3 A_SetFloorClip
+		HDD2 GHIJKL 3
+		HDD2 M -1
+		Stop
+	XDeath:
+		HDD2 A 2
+		CACX AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("CacoGoreController")
+		CACX C 2
+		CACX D 2 A_XScream
+		CACX EF 2
+		CACX G 2 A_NoBlocking
+		CACX H 2 A_SetFloorClip
+		CACX IJKLMNOPQRS 2
+		CACX T -1
+		Stop
+	Death.Massacre:
+		HDD2 A 2
+		CACX ABC 2
+		CACX D 2 A_XScream
+		CACX EF 2
+		CACX G 2 A_NoBlocking
+		CACX H 2 A_SetFloorClip
+		CACX IJKLMNOPQRS 2
+		CACX T -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2")
+	Raise1:
+		HDSD IHGFEDCBA 3
+		Goto See
+	Raise2:
+		HDD2 MLKJUHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR SDCacodemonBall : CacodemonBall replaces CacodemonBall
+{
+	decal cacoscorch
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancySpawn")
+		CABA ABCB 2 Bright
+		Loop
+	FancySpawn:
+		CABA ABCB 2 Bright A_SpawnItemEx("CacoSparkle", random(-20, 20), random(-20, 20), random(0, 20))
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		CABX a 4 Bright
+		CABX BCDEF 2 Bright
+		Stop
+	FancyDeath:
+		CABX a 4 Bright
+		TNT1 AAAAAA 0 A_SpawnItemEx("CacoSparkle", 0, 0, 0, random(-2, 2), random(-2, 2), random(-1, 2), random(0, 360))
+		CABX BCDEF 2 Bright
+		Stop
+	}
+}

@@ -1,0 +1,115 @@
+ACTOR SDDemon : Demon Replaces Demon
+{
+	GibHealth 40
+	States
+	{
+	Spawn:
+		SSRG NO 10 A_Look
+		Loop
+	See:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FastPinky")==1, "QuickSee")
+		SSRG AABCDDEF 2 fast A_Chase
+		Loop
+	QuickSee:
+		SSRG ABCDEF 2 A_Chase
+		Loop
+	Melee:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FastPinky")==1, "QuickMelee")
+		SSRG G 8 fast A_FaceTarget
+		SSRG GGHHIIJ 1 fast A_FaceTarget
+		SSRG K 1 fast
+		SSRG L 1 fast A_SargAttack
+		SSRG M 4 fast
+		SSRG G 3 fast
+		Goto See
+	QuickMelee:
+		SSRG G 2 A_FaceTarget
+		SSRG GGHHIIJ 1 A_FaceTarget
+		SSRG K 1
+		SSRG L 1 A_SargAttack
+		SSRG MG 2
+		Goto See
+	Pain:
+		SSRG N 1
+		SSRG O 2
+		SSRG N 1 A_Pain
+		Goto See
+	Crush:
+		PL14 A -1 A_PlaySound("gib/squish")
+		Stop
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3")
+	Death1:
+		SSRD A 3
+		SSRD B 3 A_Scream
+		SSRD C 3
+		SSRD D 3 A_NoBlocking
+		SSRD EFGH 3
+		SSRD I -1
+		Stop
+	Death2:
+		SSRN A 3
+		SSRN B 3 A_Scream
+		SSRN C 3 A_SpawnItemEx("DemonHand", random (-4,8),random (1,3),random(35,40),random(2,5), 0, random(1,5), random(-70,-90), SXF_TRANSFERALPHA|SXF_TRANSFERRENDERSTYLE|SXF_SETMASTER)
+		SSRN D 3 A_NoBlocking
+		SSRN EFGHIJ 3
+		SSRN K -1
+		Stop
+	Death3:
+		SARX A 3
+		SARX B 3 A_Scream
+		SARX C 3
+		SARX D 3 A_NoBlocking
+		SARX EFGHIJK 3
+		SARX L -1
+		Stop
+	XDeath:
+		SARX A 3
+		SARG O 3
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("BigGoreController")
+		SARG P 3 A_XScream
+		SARG Q 3
+		SARG R 3 A_NoBlocking
+		SARG STUVW 3
+		SARG X -1
+		Stop
+	Death.Massacre:
+		SARX A 3
+		SARG O 3
+		SARG P 3 A_XScream
+		SARG Q 3
+		SARG R 3 A_NoBlocking
+		SARG STUVW 3
+		SARG X -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3")
+	Raise1:
+		SSRD IHGFEDCBA 3
+		Goto See
+	Raise2:
+		SSRN KJIHGFEDCBA 3
+		Goto See
+	Raise3:
+		SARX LKJIHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR SDSpectre : SDDemon replaces Spectre
+{
+	+SHADOW
+	RenderStyle OptFuzzy
+	Alpha 0.5
+	HitObituary "$OB_SPECTREHIT"
+}

@@ -1,0 +1,127 @@
+const int SD_VARIANTSPAWNFLAGS = SXF_TRANSFERAMBUSHFLAG | SXF_NOCHECKPOSITION;
+
+ACTOR SmoothDoom_VariantsSpawner
+{
+	+ISMONSTER
+	+NOBLOCKMAP
+	+NOSECTOR
+	+NOGRAVITY
+	+THRUACTORS
+}
+
+// ------------------------------------------------------------------------------------------------
+
+ACTOR ZombieDice : SmoothDoom_VariantsSpawner replaces Zombieman
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(GetCVAR("SD_Rifle")==1, "RifleSpawn")
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Variants")==1, "VariantSpawn")
+	NormalSpawn:
+		TNT1 A 0 A_SpawnItemEx("SDZombieman", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	VariantSpawn:
+		TNT1 A 0 A_Jump(256, "Standard", "Variant1", "Variant2", "Variant3")
+	Standard:
+		TNT1 A 0 A_SpawnItemEx("SDZombieman", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant1:
+		TNT1 A 0 A_SpawnItemEx("ZombieV1", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant2:
+		TNT1 A 0 A_SpawnItemEx("ZombieV2", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant3:
+		TNT1 A 0 A_SpawnItemEx("ZombieV3", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	RifleSpawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Variants")==1, "RifleVariants")
+	RifleNormal:
+		TNT1 A 0 A_SpawnItemEx("RifleZombie0", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	RifleVariants:
+		TNT1 A 0 A_Jump(256, "RifleStandard", "RifleVariant1", "RifleVariant2", "RifleVariant3")
+	RifleStandard:
+		TNT1 A 0 A_SpawnItemEx("RifleZombie0", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	RIfleVariant1:
+		TNT1 A 0 A_SpawnItemEx("RifleZombie1", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	RifleVariant2:
+		TNT1 A 0 A_SpawnItemEx("RifleZombie2", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	RifleVariant3:
+		TNT1 A 0 A_SpawnItemEx("RifleZombie3", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	}
+}
+
+ACTOR SguyDice : SmoothDoom_VariantsSpawner replaces Shotgunguy
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(GetCVAR("SD_Variants")==1, "VariantSpawn")
+	NormalSpawn:
+		TNT1 A 0 A_SpawnItemEx("SDShotgunguy", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	VariantSpawn:
+		TNT1 A 0 A_Jump(256, "Standard", "Variant1", "Variant2")
+	Standard:
+		TNT1 A 0 A_SpawnItemEx("SDShotgunguy", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant1:
+		TNT1 A 0 A_SpawnItemEx("SguyV1", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant2:
+		TNT1 A 0 A_SpawnItemEx("SguyV2", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	}
+}
+
+ACTOR CguyDice : SmoothDoom_VariantsSpawner replaces Chaingunguy
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(GetCVAR("SD_Variants")==1, "VariantSpawn")
+	NormalSpawn:
+		TNT1 A 0 A_SpawnItemEx("SDChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	VariantSpawn:
+		TNT1 A 0 A_Jump(256, "Standard", "Variant1", "Variant2")
+	Standard:
+		TNT1 A 0 A_SpawnItemEx("SDChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant1:
+		TNT1 A 0 A_SpawnItemEx("CguyV1", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant2:
+		TNT1 A 0 A_SpawnItemEx("CguyV2", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	}
+}
+
+ACTOR ImpDice : SmoothDoom_VariantsSpawner replaces DoomImp
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 NoDelay A_JumpIf(GetCVAR("SD_Variants")==1, "VariantSpawn")
+	NormalSpawn:
+		TNT1 A 0 A_SpawnItemEx("SDDoomImp", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	VariantSpawn:
+		TNT1 A 0 A_Jump(256, "Standard", "Variant1", "Variant2")
+	Standard:
+		TNT1 A 0 A_SpawnItemEx("SDDoomImp", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant1:
+		TNT1 A 0 A_SpawnItemEx("ImpV1", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	Variant2:
+		TNT1 A 0 A_SpawnItemEx("ImpV2", 0, 0, 0, 0, 0, 0, 0, SD_VARIANTSPAWNFLAGS)
+		Stop
+	}
+}

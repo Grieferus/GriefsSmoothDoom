@@ -1,0 +1,65 @@
+ACTOR SDArchvile : Archvile Replaces Archvile
+{
+	GibHealth 60
+	States
+	{
+	Spawn:
+		VILI AB 10 A_Look
+		Loop
+	See:
+		VILM AABCDEFFGHIJ 2 A_VileChase
+		Loop
+	Missile:
+		NVIL A 0 Bright A_VileStart
+		NVIL A 3 Bright A_FaceTarget
+		NVIL B 3 Bright A_VileStart
+		NVIL CDEF 3 Bright A_FaceTarget
+		NVIL F 0 Bright A_VileTarget
+		NVIL GHIJ 3 Bright A_FaceTarget
+		NVIL K 24 Bright A_FaceTarget
+		NVIL LMNO 3 Bright A_FaceTarget
+		NVIL P 4 Bright A_VileAttack
+		NVIL Q 4 Bright
+		NVIL R 2 Bright
+		NVIR ABCD 2 Bright
+		NVIR E 8 Bright
+		Goto See
+	Heal:
+		VILE XVYWZZWYVX 3 Bright
+		Goto See
+	Pain:
+		VILP A 3
+		VILP B 7 A_Pain
+		Goto See
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		VILD A 3
+		VILD B 3 A_Scream
+		VILD C 3 A_NoBlocking
+		VILD DEFGHIJKLM 3
+		VILD M -1
+		Stop
+	XDeath:
+		XVIL A 3
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		XVIL B 2 A_XScream
+		XVIL C 2 A_NoBlocking
+		XVIL DEFGHIJKLMNOP 2
+		XVIL Q -1
+		Stop
+	Death.Massacre:
+		XVIL A 3
+		XVIL B 2 A_XScream
+		XVIL C 2 A_NoBlocking
+		XVIL DEFGHIJKLMNOP 2
+		XVIL Q -1
+		Stop
+	}
+}

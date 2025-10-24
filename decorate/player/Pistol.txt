@@ -1,0 +1,132 @@
+ACTOR SDPistol : Pistol replaces Pistol
+{
+	Weapon.BobStyle Alpha
+	decal bulletchip
+	States
+	{
+	Ready:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLReady")
+		PKPI A 1 A_WeaponReady
+		Loop
+	Deselect:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLDeselect")
+		PKPI A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLSelect")
+		PKPI A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLFire")
+		PKPI A 3
+		TNT1 A 0 A_FireBullets(5.6, 1, 1, 5, "BulletPuff")
+		TNT1 A 0 A_PlaySound("weapons/pistol",CHAN_WEAPON)
+		TNT1 A 0 A_GunFlash
+		PKPI BBCDEFGHICB 1
+		PKPI A 5 A_ReFire
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Recoil")==1, "KickFlash")
+		PKPF B 1 Bright A_Light1
+		PKPF A 1 Bright A_Light1
+		Goto LightDone
+	KickFlash:
+		PKPF B 1 Bright A_Light1
+		PKPF A 1 Bright A_Light1
+		TNT1 A 1 A_SetPitch(pitch+0.3)
+		TNT1 A 1 A_SetPitch(pitch-0.1)
+		TNT1 A 2 A_SetPitch(pitch-0.1)
+		TNT1 A 2 A_SetPitch(pitch-0.05)
+		TNT1 A 2 A_SetPitch(pitch-0.05)
+		Goto LightDone
+	BLReady:
+		BKPI A 1 A_WeaponReady
+		Loop
+	BLDeselect:
+		BKPI A 1 A_Lower
+		Loop
+	BLSelect:
+		BKPI A 1 A_Raise
+		Loop
+	BLFire:
+		BKPI A 4
+		TNT1 A 0 A_FireBullets(5.6, 1, 1, 5, "BulletPuff")
+		TNT1 A 0 A_PlaySound("weapons/pistol",CHAN_WEAPON)
+		TNT1 A 0 A_GunFlash
+		BKPI B 2
+		BKPI DF 2
+		BKPI GHIB 1
+		BKPI A 5 A_ReFire
+		Goto Ready
+		}
+}
+
+ACTOR SDRifle : Pistol
+{
+	Weapon.BobStyle Alpha
+	Inventory.PickupMessage "You got the Rifle!"
+	decal "bulletchip"
+	+CHEATNOTWEAPON
+	States
+	{
+	Spawn:
+		RIFL A -1
+		stop
+	Ready:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLready")
+		RIF2 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLdeselect")
+		RIF2 A 1 A_Lower
+		Loop
+	Select:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLselect")
+		RIF2 A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gloves")==1, "BLFire")
+		RIF2 AB 1
+		TNT1 A 0 A_FireBullets(5.6, 1, 1, 5, "BulletPuff")
+		TNT1 A 0 A_PlaySound("weapons/pistol",CHAN_WEAPON)
+		TNT1 A 0 A_GunFlash
+		RIF2 DCEF 2
+		RIF2 G 2 A_ReFire
+		RIF2 H 3
+		RIF2 A 5
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Recoil")==1, "KickFlash")
+		RIF2 I 2 Bright A_Light1
+		RIF2 J 1 Bright A_Light1
+		Goto LightDone
+	KickFlash:
+		RIF2 I 2 Bright A_Light1
+		RIF2 J 1 Bright A_Light1
+		TNT1 A 1 A_SetPitch(pitch+0.3)
+		TNT1 A 1 A_SetPitch(pitch-0.1)
+		TNT1 A 2 A_SetPitch(pitch-0.1)
+		TNT1 A 2 A_SetPitch(pitch-0.05)
+		TNT1 A 2 A_SetPitch(pitch-0.05)
+		Goto LightDone
+	BLReady:
+		BIF2 A 1 A_WeaponReady
+		Loop
+	BLDeselect:
+		BIF2 A 1 A_Lower
+		Loop
+	BLSelect:
+		BIF2 A 1 A_Raise
+		Loop
+	BLFire:
+		BIF2 AB 1
+		TNT1 A 0 A_FireBullets(5.6, 1, 1, 5, "BulletPuff")
+		TNT1 A 0 A_PlaySound("weapons/pistol",CHAN_WEAPON)
+		TNT1 A 0 A_GunFlash
+		BIF2 DCEF 2
+		BIF2 G 2 A_ReFire
+		BIF2 H 3
+		BIF2 A 5
+		Goto Ready
+		}
+}

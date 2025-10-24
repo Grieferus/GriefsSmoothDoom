@@ -1,0 +1,250 @@
+//kept around for inheritance purposes
+ACTOR ExplosionFire
+{
+	Game Doom
+	Radius 1
+	Height 1
+	Speed 4
+	Damage 0 
+	+NOBLOCKMAP
+	+NOTELEPORT
+	+DONTSPLASH
+	+MISSILE
+	+FORCEXYBILLBOARD
+	+CLIENTSIDEONLY
+	+NOINTERACTION
+	+NOCLIP
+	DamageType Flames
+	Gravity 0
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		MISL BCDEFG 2 Bright
+		Stop
+	}
+}
+
+ACTOR SDBulletPuff Replaces BulletPuff
+{
+	Game Doom
+	SpawnID 131
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+ALLOWPARTICLES
+	+RANDOMIZE
+	VSpeed 1
+	Mass 5
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyPuff")
+		SPUF ABCD 2 Bright
+		SPUF EFGHI 2
+		Stop
+	FancyPuff:
+		SPUF A 2 Bright
+		TNT1 AA 0 A_SpawnItemEx ("PuffParticles", 0, 0, 0, random(1,3),random(-1,1),random(0,-2))
+		TNT1 AA 0 A_SpawnItemEx ("SmallPuffParticles", 0, 0, 0, random(1,2),random(-3,3),random(-5,3))
+		SPUF BCDEFGHI 2
+		Stop
+	Melee:
+		SPUF EFGHI 2
+		Stop
+	}
+}
+
+ACTOR BulletPuffGibby : SDBulletPuff
+{
+	DamageType GibbyHaynes
+}
+
+ACTOR XtremeSawPuff : SDBulletPuff
+{
+	decal bulletchip
+	DamageType GibbyHaynes
+	States
+	{
+	Spawn:
+		SPUF ABCD 2 Bright A_SpawnItemEx ("PuffParticles",0,random(-1,1),random(-1,1),random(4,6),random(-4,4),random(0,-5))
+		Stop
+	}
+}
+
+ACTOR PuffParticles
+{
+	Projectile
+	Scale 0.6
+	Speed 6
+	Radius 3
+	BounceFactor 0.5
+	WallBounceFactor 0.4
+	BounceCount 5
+	BounceType Doom
+	Gravity 0.2
+	Renderstyle Add
+	-NOGRAVITY
+	-NOBLOCKMAP
+	+NOTELEPORT
+	+THRUACTORS
+	+DROPOFF
+	+FLOORCLIP
+	-BOUNCEONACTORS
+	+DONTSPLASH
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(128,+3)
+		PUFX ABCDE random(1,5) Bright
+		Stop
+		PUFX CDE random(1,3)
+		Stop
+	Death:
+		TNT1 A 0
+		Stop
+	}
+}
+
+ACTOR SmallPuffParticles: PuffParticles
+{
+	Speed 15
+	Scale 0.4
+}
+
+ACTOR ExplosionParticles : PuffParticles
+{
+	BounceCount 3
+	Gravity 0.4
+	States
+	{
+	Spawn:
+		PUFX A random(2,3) Bright
+		PUFX BCDE random(2,3)
+		Stop
+	}
+}
+
+ACTOR SDTeleportFog : TeleportFog replaces TeleportFog
+{
+	States
+	{
+	Spawn:
+		SFOG ABCDEFGHIJKLMNOPQRSTSRQPONM 2 Bright
+		Stop
+	}
+}
+
+ACTOR SDSmokeTrail : RocketSmokeTrail replaces RocketSmokeTrail
+{
+	States
+	{
+	Spawn:
+		RTRL ABCD random(2,3)
+		SPUF EFGHI random(2,3)
+		Stop
+	}
+}
+
+ACTOR SDSmoke: SDBulletPuff
+{
+	Renderstyle Translucent
+	Alpha 0.4
+	States
+	{
+	Spawn:
+		SMOK ABCDEFGHIJ random(2,3)
+		Stop
+	}
+}
+
+ACTOR GreenGlimmer : SDBulletPuff
+{
+	+NOGRAVITY
+	States
+	{
+	Spawn:
+		SFOG MNOP random(1,2) Bright A_SpawnItemEx("GreenSparkle",random(-5,5),random(-5,5),random(-3,5))
+		SFOG QRSTSRQPONM random(1,2) Bright
+		Stop
+	}
+}
+
+ACTOR BlueSparkle : SDSmokeTrail
+{
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(256,+3)
+		SPB1 ABCDE random(2,3) Bright
+		Stop
+		SPB2 ABCDE random(2,3) Bright
+		Stop
+	}
+}
+
+ACTOR BlueSparkle2 : PuffParticles
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(256,+3)
+		SPB1 ABCDE random(2,3) Bright
+		Stop
+		SPB2 ABCDE random(2,3) Bright
+		Stop
+	}
+}
+
+ACTOR GreenSparkle : SDSmokeTrail
+{
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(256,+3)
+		SPG1 ABCDE random(2,3) Bright
+		Stop
+		SPG2 ABCDE random(2,3) Bright
+		Stop
+	}
+}
+
+ACTOR GreenSparkle2 : BlueSparkle2
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(256,+3)
+		SPG1 ABCDE random(2,3) Bright
+		Stop
+		SPG2 ABCDE random(2,3) Bright
+		Stop
+	}
+}
+
+ACTOR CacoSparkle : SDSmokeTrail
+{
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_Jump(256,+3)
+		SPC1 ABCDE random(2,3) Bright
+		Stop
+		SPC2 ABCDE random(2,3) Bright
+		Stop
+	}
+}
+
+ACTOR ImpTrail : SDSmokeTrail
+{
+	Renderstyle Add
+	States
+	{
+	Spawn:
+		IBSP ABCD 2 Bright
+		Stop
+	}
+}

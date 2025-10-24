@@ -1,0 +1,42 @@
+ACTOR SDCyberdemon : Cyberdemon replaces Cyberdemon
+{
+	States
+	{
+	Spawn:
+		SMCM G 10 A_Look
+		SMCZ A 10 A_Look
+		Loop
+	See:
+		SMCM A 3 A_Hoof
+		SMCM BCDEF 3 A_Chase
+		SMCM G 3 A_Metal
+		SMCM H 3 A_Chase
+		Loop
+	Missile:
+		SMCS ABC 2 A_FaceTarget
+		SMCS E 2 A_CustomMissile("SDRocket", 52, -24)
+		SMCS DEFCB 2
+		SMCS ABCF 3 A_FaceTarget
+		SMCS E 2 A_CustomMissile("SDRocket", 52, -24)
+		SMCS DEFCB 2
+		SMCS ABCF 3 A_FaceTarget
+		SMCS E 2 A_CustomMissile("SDRocket", 52, -24)
+		SMCS DEFCB 2
+		Goto See
+	Pain:
+		SMCI A 4 A_Pain
+		SMCI BCB 2
+		Goto See
+	Death:
+		SMCI A 10
+		SMCD A 5 A_Scream
+		SMCD B 5
+		SMCD CDEFGHIJ 3
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("BigGoreController")
+		SMCD K 4 A_NoBlocking
+		SMCD L 100
+		SMCD L -1 A_BossDeath
+		Stop
+	}
+}

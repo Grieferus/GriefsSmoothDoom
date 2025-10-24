@@ -1,0 +1,87 @@
+ACTOR SDRocketLauncher : RocketLauncher replaces RocketLauncher
+{
+	Weapon.BobStyle Alpha
+	States
+	{
+	Spawn:
+		LAUN A 2
+		Loop
+	Ready:
+		PKRL A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PKRL A 1 A_Lower
+		Loop
+	Select:
+		PKRL A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Recoil")==1, "RecoilFire")
+		TNT1 A 0 A_GunFlash
+		PKRL ABCD 2
+		PKRL E 2 A_FireMissile
+		PKRL DCBFG 2
+		PKRL A 4 A_ReFire
+		Goto Ready
+	RecoilFire:
+		TNT1 A 0 A_GunFlash
+		PKRL ABCD 2
+		PKRL E 1 A_FireMissile
+		PKRL E 1 a_setpitch(pitch-2.0)
+		PKRL D 1 a_setpitch(pitch+0.5)
+		PKRL D 1 a_setpitch(pitch+0.4)
+		PKRL C 1 a_setpitch(pitch+0.2)
+		PKRL C 1 a_setpitch(pitch+0.2)
+		PKRL B 1 a_setpitch(pitch+0.1)
+		PKRL B 1 a_setpitch(pitch+0.1)
+		PKRL FG 2
+		PKRL A 4 A_ReFire
+		Goto Ready
+	Flash:
+		PKRF A 1 Bright A_Light1
+		PKRF B 1 Bright
+		PKRF C 2 Bright A_Light2
+		PKRF DE 2 Bright
+		Goto LightDone
+	}
+}
+
+ACTOR SDRocket Replaces Rocket
+{
+	Game Doom
+	SpawnID 127
+	Radius 11
+	Height 8
+	Speed 20
+	Damage 20
+	Projectile
+	+RANDOMIZE
+	+EXTREMEDEATH
+	decal scorch
+	SeeSound "weapons/rocklf"
+	DeathSound "weapons/rocklx"
+	Obituary "$OB_MPROCKET"
+	States
+	{
+	Spawn:
+		RCKT ABCB 2 Bright A_SpawnItemEx("SDSmokeTrail",-8,random(-3,3),random(2,6))
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		EXPL D 0 A_Quake (3,10,0,750,0)
+		EXPL D 0 A_Quake (1,25,0,1000,0)
+		EXPL A 2 Bright A_Explode
+		EXPL BCDEFGHI 2 Bright
+		Stop
+	FancyDeath:
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("ExplosionParticles",random(-1,1),random(-1,1),random(-1,1),random(-4,4),random(-4,4),random(0,6),random(0,360))
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Rumble")==0, "+3")
+		EXPL D 0 A_Quake (3,10,0,750,0)
+		EXPL D 0 A_Quake (1,25,0,1000,0)
+		EXPL A 2 Bright A_Explode
+		EXPL BC 2 Bright A_SpawnItemEx("SDSmoke",random(-1,1),random(-1,1),random(-1,1),random(-4,4),random(-4,4),random(0,6),random(0,360))
+		EXPL DEFGHI 2 Bright
+		Stop
+	}
+}

@@ -1,0 +1,30 @@
+ACTOR SDLostSoul : LostSoul replaces LostSoul
+{
+	Speed 4
+	+NOBLOOD
+	States
+	{
+	Spawn:
+		ZKUL ABCD 5 Bright A_Look
+		Loop
+	See:
+		ZKUL ABCD 3 Bright A_Chase
+		Loop
+	Missile:
+		SSKU ABCDA 2 Bright A_FaceTarget
+		SSKU B 4 Bright A_SkullAttack
+		SSKU ABCD 2 Bright
+		Goto Missile+6
+	Pain:
+		LSTP A 3 Bright
+		LSTP B 3 Bright A_Pain
+		Goto See
+	Death:
+		SSOU AB 2 Bright
+		SSOU C 2 Bright A_Scream
+		SSOU DE 2 Bright
+		SSOU F 2 Bright A_NoBlocking
+		SSOU GHIJKLM 2 Bright
+		Stop
+	}
+}

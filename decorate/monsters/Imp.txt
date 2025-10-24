@@ -1,0 +1,194 @@
+ACTOR SDDoomImp : DoomImp Replaces DoomImp
+{
+	States
+	{
+	Spawn:
+		IMID AB 10 A_Look
+		Loop
+	See:
+		TRSO ABCDEFGH 3 A_Chase
+		Loop
+	Melee:
+		TRSO KJIJKL 2 A_FaceTarget
+		TRSO M 3 A_CustomMeleeAttack(random(1,8),"imp/melee")
+		TRSO L 3
+		Goto See
+	Missile:
+		TRSO KJ 2 A_FaceTarget
+		TRSO I 6
+		TRSO JKL 2 A_FaceTarget
+		TRSO M 3 A_CustomMissile("SDImpBall", 32, 3)
+		TRSO L 3
+		Goto See
+	Pain:
+		TRAI A 2
+		TRAI B 2 A_Pain
+		Goto See
+	Death.GibbyHaynes:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SSGGore")==0, "Death")
+		TNT1 A 0 A_JumpIfCloser(128, "XDeath")
+		Goto Death
+	Death.Saw:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_SawGore")==0, "Death")
+		Goto XDeath
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Death1")
+		TNT1 A 0 A_Jump(256, "Death1", "Death2", "Death3", "Death4")
+	Death1:
+		5OSS J 2 A_Scream
+		5OSS K 2 A_NoBlocking
+		5OSS LMNOPQRST 3
+		5OSS U -1
+		Stop
+	Death2:
+		TSD3 A 3 A_Scream
+		TSD3 B 2 A_NoBlocking
+		TSD3 CDEFGHIJ 3
+		TSD3 K -1
+		Stop
+	Death3:
+		TRO2 A 3 A_Scream
+		TRO2 B 3 A_NoBlocking
+		TRO2 CDE 3
+		TRO2 FGHIJ 2
+		TRO2 KL 3
+		TRO2 K -1
+		Stop
+	Death4:
+		SROD A 3 A_Scream
+		SROD B 3 A_NoBlocking
+		SROD C 3
+		SROD DE 4
+		SROD FGHIJ 3
+		SROD K -1
+		Stop
+	XDeath:
+		TROX AB 2
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_Gore")==0, +2)
+		TNT1 A 0 A_SpawnItemEx("GoreController")
+		TROX C 2 A_XScream
+		TROX DEF 2
+		TROX G 2 A_NoBlocking
+		TROX HIJKLMN 2
+		TROX O -1
+		Stop
+	Death.Massacre:
+		TROX AB 2
+		TROX C 2 A_XScream
+		TROX DEF 2
+		TROX G 2 A_NoBlocking
+		TROX HIJKLMN 2
+		TROX O -1
+		Stop
+	Raise:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_MoreDeaths")==0, "Raise1")
+		TNT1 A 0 A_Jump(256, "Raise1", "Raise2", "Raise3", "Raise4")
+	Raise1:
+		5OSS TSRQPONMLKJ 3
+		Goto See
+	Raise2:
+		TSD3 JIHGFEDCBA 3
+		Goto See
+	Raise3:
+		TRO2 LJIHGFEDCBA 3
+		Goto See
+	Raise4:
+		SROD JIHGFEDCBA 3
+		Goto See
+	}
+}
+
+ACTOR ImpV1 : SDDoomImp
+{
+	States
+	{
+	Spawn:
+		IIV1 AB 10 A_Look
+		Loop
+	See:
+		IMV1 ABCDEFGH 3 A_Chase
+		Loop
+	Melee:
+		ISV1 KJIJKL 2 A_FaceTarget
+		ISV1 M 3 A_CustomMeleeAttack(random(1,8),"imp/melee")
+		ISV1 L 3
+		Goto See
+	Missile:
+		ISV1 KJ 2 A_FaceTarget
+		ISV1 I 6
+		ISV1 JKL 2 A_FaceTarget
+		ISV1 M 3 A_CustomMissile("SDImpBall", 32, 3)
+		ISV1 L 3
+		Goto See
+	Pain:
+		TRAI A 2
+		TRAI B 2 A_Pain
+		Goto See
+	}
+}
+
+ACTOR ImpV2 : SDDoomImp
+{
+	States
+	{
+	Spawn:
+		IIV2 AB 10 A_Look
+		Loop
+	See:
+		IMV2 ABCDEFGH 3 A_Chase
+		Loop
+	Melee:
+		ISV2 KJIJKL 2 A_FaceTarget
+		ISV2 M 3 A_CustomMeleeAttack(random(1,8),"imp/melee")
+		ISV2 L 3
+		Goto See
+	Missile:
+		ISV2 KJ 2 A_FaceTarget
+		ISV2 I 6
+		ISV2 JKL 2 A_FaceTarget
+		ISV2 M 3 A_CustomMissile("SDImpBall", 32, 3)
+		ISV2 L 3
+		Goto See
+	Pain:
+		TRAI A 2
+		TRAI B 2 A_Pain
+		Goto See
+	}
+}
+
+ACTOR SDImpBall : DoomImpBall replaces DoomImpBall
+{
+	Game Doom
+	SpawnID 10
+	Radius 6
+	Height 8
+	Speed 10
+	FastSpeed 20
+	Damage 3
+	Projectile
+	+RANDOMIZE
+	RenderStyle Add
+	decal doomimpscorch
+	Alpha 1
+	SeeSound "imp/attack"
+	DeathSound "imp/shotx"
+	States
+	{
+	Spawn:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancySpawn")
+		BIMP ABCB 2 Bright
+		Loop
+	FancySpawn:
+		BIMP ABCB 2 Bright A_SpawnItemEx("ImpTrail",random(8,12),random(-3,3),random(-3,3),random(1,0),0,0,180,0)
+		Loop
+	Death:
+		TNT1 A 0 A_JumpIf(GetCVAR("SD_FancyPuff")==1, "FancyDeath")
+		IPRD ABCDEFGH 2 Bright
+		Stop
+	FancyDeath:
+		IPRD A 2 Bright
+		TNT1 AAAAAA 0 A_SpawnItemEx("ExplosionParticles", 0, 0, 0, random(-2, 2), random(-2, 2), random(-1, 2), random(0, 360))
+		IPRD BCDEFGH 2 Bright
+		Stop
+	}
+}
