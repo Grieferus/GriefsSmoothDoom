@@ -49,4 +49,6 @@ What started as a simple super shotgun animation improvement grew into constant 
 - Animated textures with brightmaps
 
 # How to use
-Make sure to set "View bob amount while moving" to 0.15 and "Weapon bob speed" to 1.6 in GZDoom's "display options". Additionally, you can set "Tonemap mode" to "Palette" in "OpenGL options" (In later versions, this option is in "Postprocessing" submenu).
+Make sure to set "View bob amount while moving" to 0.15 and "Weapon bob speed" to 1.6 in GZDoom's "display options" to fully mimic alpha-style movement. Additionally, you can set "Tonemap mode" to "Palette" in "OpenGL options" (In later versions, this option is in "Postprocessing" submenu).
+
+If you want to make the mod compatible with megawads that utilize custom palette (Such as [Back to Saturn X](https://doomwiki.org/wiki/Back_to_Saturn_X)), make sure to convert all the sprites to PNG using [Slade](https://slade.mancubus.net/index.php?page=downloads) (Either truecolor or paletted).
