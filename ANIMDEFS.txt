@@ -1,0 +1,19 @@
+TEXTURE optional M_SKULL1
+PIC NEWSKULA tics 2
+PIC NEWSKULB tics 1
+PIC NEWSKULC tics 1
+PIC NEWSKULD tics 1
+PIC NEWSKULE tics 1
+PIC NEWSKULF tics 1
+PIC NEWSKULG tics 1
+PIC NEWSKULH tics 2
+Oscillate
+
+//Flats
+
+TEXTURE optional BLOOD1 range BLOOD64 tics 2
+TEXTURE optional LAVA1 range LAVA51 tics 2
+TEXTURE optional NUKAGE1 range NUKAGE64 tics 2
+TEXTURE optional FWATER1 range FWATER64 tics 2
+TEXTURE optional BFALL1 range BFALL64 tics 1
+TEXTURE optional WFALL1 range WFALL64 tics 1

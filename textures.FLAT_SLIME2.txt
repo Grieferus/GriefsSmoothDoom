@@ -1,0 +1,384 @@
+Texture Optional MUCK1, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK2, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -1, -1 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK3, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -2, -2 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK4, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -3, -3 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK5, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -4, -4 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK6, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -5, -5 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK7, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -6, -6 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK8, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -7, -7 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK9, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -8, -8 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK10, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -9, -9 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK11, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -10, -10 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK12, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -11, -11 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK13, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -12, -12 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK14, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -13, -13 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK15, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -14, -14 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK16, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -15, -15 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK17, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -16, -16 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK18, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -17, -17 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK19, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -18, -18 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK20, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -19, -19 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK21, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -20, -20 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK22, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -21, -21 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK23, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -22, -22 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK24, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -23, -23 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK25, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -24, -24 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK26, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -25, -25 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK27, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -26, -26 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK28, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -27, -27 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK29, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -28, -28 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK30, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -29, -29 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK31, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -30, -30 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK32, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -31, -31 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK33, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -32, -32 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK34, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -33, -33 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK35, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -34, -34 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK36, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -35, -35 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK37, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -36, -36 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK38, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -37, -37 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK39, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -38, -38 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK40, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -39, -39 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK41, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -40, -40 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK42, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -41, -41 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK43, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -42, -42 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK44, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -43, -43 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK45, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -44, -44 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK46, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -45, -45 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK47, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -46, -46 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK48, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -47, -47 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK49, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -48, -48 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK50, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -49, -49 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK51, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -50, -50 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK52, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -51, -51 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK53, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -52, -52 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK54, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -53, -53 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK55, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -54, -54 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK56, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -55, -55 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK57, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -56, -56 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK58, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -57, -57 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK59, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -58, -58 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK60, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -59, -59 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK61, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -60, -60 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK62, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -61, -61 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK63, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -62, -62 { Style Translucent; Alpha .5 }
+}
+Texture Optional MUCK64, 64, 64
+{
+	Patch C_MUCK1, 0, 0
+	Patch C_MUCK5, 0, 0 { Style Translucent; Alpha .5 }
+	Patch C_GOOP1, -63, -63 { Style Translucent; Alpha .5 }
+}

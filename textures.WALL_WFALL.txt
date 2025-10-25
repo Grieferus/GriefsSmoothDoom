@@ -1,0 +1,1012 @@
+Texture Optional "WFALL1", 64, 128
+{
+	Patch "C_WFAL1", 0, 0
+	Patch "C_WFAL2", 0, 0
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL2", 64, 128
+{
+	Patch "C_WFAL1", 0, 2
+	Patch "C_WFAL1", 0, -126
+	Patch "C_WFAL2", 0, 4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL3", 64, 128
+{
+	Patch "C_WFAL1", 0, 4
+	Patch "C_WFAL1", 0, -124
+	Patch "C_WFAL2", 0, 8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL4", 64, 128
+{
+	Patch "C_WFAL1", 0, 6
+	Patch "C_WFAL1", 0, -122
+	Patch "C_WFAL2", 0, 12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL5", 64, 128
+{
+	Patch "C_WFAL1", 0, 8
+	Patch "C_WFAL1", 0, -120
+	Patch "C_WFAL2", 0, 16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL6", 64, 128
+{
+	Patch "C_WFAL1", 0, 10
+	Patch "C_WFAL1", 0, -118
+	Patch "C_WFAL2", 0, 20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL7", 64, 128
+{
+	Patch "C_WFAL1", 0, 12
+	Patch "C_WFAL1", 0, -116
+	Patch "C_WFAL2", 0, 24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL8", 64, 128
+{
+	Patch "C_WFAL1", 0, 14
+	Patch "C_WFAL1", 0, -114
+	Patch "C_WFAL2", 0, 28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL9", 64, 128
+{
+	Patch "C_WFAL1", 0, 16
+	Patch "C_WFAL1", 0, -112
+	Patch "C_WFAL2", 0, 32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL10", 64, 128
+{
+	Patch "C_WFAL1", 0, 18
+	Patch "C_WFAL1", 0, -110
+	Patch "C_WFAL2", 0, 36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL11", 64, 128
+{
+	Patch "C_WFAL1", 0, 20
+	Patch "C_WFAL1", 0, -108
+	Patch "C_WFAL2", 0, 40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL12", 64, 128
+{
+	Patch "C_WFAL1", 0, 22
+	Patch "C_WFAL1", 0, -106
+	Patch "C_WFAL2", 0, 44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL13", 64, 128
+{
+	Patch "C_WFAL1", 0, 24
+	Patch "C_WFAL1", 0, -104
+	Patch "C_WFAL2", 0, 48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL14", 64, 128
+{
+	Patch "C_WFAL1", 0, 26
+	Patch "C_WFAL1", 0, -102
+	Patch "C_WFAL2", 0, 52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL15", 64, 128
+{
+	Patch "C_WFAL1", 0, 28
+	Patch "C_WFAL1", 0, -100
+	Patch "C_WFAL2", 0, 56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL16", 64, 128
+{
+	Patch "C_WFAL1", 0, 30
+	Patch "C_WFAL1", 0, -98
+	Patch "C_WFAL2", 0, 60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL17", 64, 128
+{
+	Patch "C_WFAL1", 0, 32
+	Patch "C_WFAL1", 0, -96
+	Patch "C_WFAL2", 0, 64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL18", 64, 128
+{
+	Patch "C_WFAL1", 0, 34
+	Patch "C_WFAL1", 0, -94
+	Patch "C_WFAL2", 0, 68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL19", 64, 128
+{
+	Patch "C_WFAL1", 0, 36
+	Patch "C_WFAL1", 0, -92
+	Patch "C_WFAL2", 0, 72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL20", 64, 128
+{
+	Patch "C_WFAL1", 0, 38
+	Patch "C_WFAL1", 0, -90
+	Patch "C_WFAL2", 0, 76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL21", 64, 128
+{
+	Patch "C_WFAL1", 0, 40
+	Patch "C_WFAL1", 0, -88
+	Patch "C_WFAL2", 0, 80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL22", 64, 128
+{
+	Patch "C_WFAL1", 0, 42
+	Patch "C_WFAL1", 0, -86
+	Patch "C_WFAL2", 0, 84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL23", 64, 128
+{
+	Patch "C_WFAL1", 0, 44
+	Patch "C_WFAL1", 0, -84
+	Patch "C_WFAL2", 0, 88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL24", 64, 128
+{
+	Patch "C_WFAL1", 0, 46
+	Patch "C_WFAL1", 0, -82
+	Patch "C_WFAL2", 0, 92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL25", 64, 128
+{
+	Patch "C_WFAL1", 0, 48
+	Patch "C_WFAL1", 0, -80
+	Patch "C_WFAL2", 0, 96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL26", 64, 128
+{
+	Patch "C_WFAL1", 0, 50
+	Patch "C_WFAL1", 0, -78
+	Patch "C_WFAL2", 0, 100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL27", 64, 128
+{
+	Patch "C_WFAL1", 0, 52
+	Patch "C_WFAL1", 0, -76
+	Patch "C_WFAL2", 0, 104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL28", 64, 128
+{
+	Patch "C_WFAL1", 0, 54
+	Patch "C_WFAL1", 0, -74
+	Patch "C_WFAL2", 0, 108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL29", 64, 128
+{
+	Patch "C_WFAL1", 0, 56
+	Patch "C_WFAL1", 0, -72
+	Patch "C_WFAL2", 0, 112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL30", 64, 128
+{
+	Patch "C_WFAL1", 0, 58
+	Patch "C_WFAL1", 0, -70
+	Patch "C_WFAL2", 0, 116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL31", 64, 128
+{
+	Patch "C_WFAL1", 0, 60
+	Patch "C_WFAL1", 0, -68
+	Patch "C_WFAL2", 0, 120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL32", 64, 128
+{
+	Patch "C_WFAL1", 0, 62
+	Patch "C_WFAL1", 0, -66
+	Patch "C_WFAL2", 0, 124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL33", 64, 128
+{
+	Patch "C_WFAL1", 0, 64
+	Patch "C_WFAL1", 0, -64
+	Patch "C_WFAL2", 0, 0
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL34", 64, 128
+{
+	Patch "C_WFAL1", 0, 66
+	Patch "C_WFAL1", 0, -62
+	Patch "C_WFAL2", 0, 4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL35", 64, 128
+{
+	Patch "C_WFAL1", 0, 68
+	Patch "C_WFAL1", 0, -60
+	Patch "C_WFAL2", 0, 8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL36", 64, 128
+{
+	Patch "C_WFAL1", 0, 70
+	Patch "C_WFAL1", 0, -58
+	Patch "C_WFAL2", 0, 12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL37", 64, 128
+{
+	Patch "C_WFAL1", 0, 72
+	Patch "C_WFAL1", 0, -56
+	Patch "C_WFAL2", 0, 16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL38", 64, 128
+{
+	Patch "C_WFAL1", 0, 74
+	Patch "C_WFAL1", 0, -54
+	Patch "C_WFAL2", 0, 20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL39", 64, 128
+{
+	Patch "C_WFAL1", 0, 76
+	Patch "C_WFAL1", 0, -52
+	Patch "C_WFAL2", 0, 24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL40", 64, 128
+{
+	Patch "C_WFAL1", 0, 78
+	Patch "C_WFAL1", 0, -50
+	Patch "C_WFAL2", 0, 28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL41", 64, 128
+{
+	Patch "C_WFAL1", 0, 80
+	Patch "C_WFAL1", 0, -48
+	Patch "C_WFAL2", 0, 32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL42", 64, 128
+{
+	Patch "C_WFAL1", 0, 82
+	Patch "C_WFAL1", 0, -46
+	Patch "C_WFAL2", 0, 36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL43", 64, 128
+{
+	Patch "C_WFAL1", 0, 84
+	Patch "C_WFAL1", 0, -44
+	Patch "C_WFAL2", 0, 40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL44", 64, 128
+{
+	Patch "C_WFAL1", 0, 86
+	Patch "C_WFAL1", 0, -42
+	Patch "C_WFAL2", 0, 44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL45", 64, 128
+{
+	Patch "C_WFAL1", 0, 88
+	Patch "C_WFAL1", 0, -40
+	Patch "C_WFAL2", 0, 48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL46", 64, 128
+{
+	Patch "C_WFAL1", 0, 90
+	Patch "C_WFAL1", 0, -38
+	Patch "C_WFAL2", 0, 52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL47", 64, 128
+{
+	Patch "C_WFAL1", 0, 92
+	Patch "C_WFAL1", 0, -36
+	Patch "C_WFAL2", 0, 56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL48", 64, 128
+{
+	Patch "C_WFAL1", 0, 94
+	Patch "C_WFAL1", 0, -34
+	Patch "C_WFAL2", 0, 60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL49", 64, 128
+{
+	Patch "C_WFAL1", 0, 96
+	Patch "C_WFAL1", 0, -32
+	Patch "C_WFAL2", 0, 64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL50", 64, 128
+{
+	Patch "C_WFAL1", 0, 98
+	Patch "C_WFAL1", 0, -30
+	Patch "C_WFAL2", 0, 68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL51", 64, 128
+{
+	Patch "C_WFAL1", 0, 100
+	Patch "C_WFAL1", 0, -28
+	Patch "C_WFAL2", 0, 72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL52", 64, 128
+{
+	Patch "C_WFAL1", 0, 102
+	Patch "C_WFAL1", 0, -26
+	Patch "C_WFAL2", 0, 76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL53", 64, 128
+{
+	Patch "C_WFAL1", 0, 104
+	Patch "C_WFAL1", 0, -24
+	Patch "C_WFAL2", 0, 80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL54", 64, 128
+{
+	Patch "C_WFAL1", 0, 106
+	Patch "C_WFAL1", 0, -22
+	Patch "C_WFAL2", 0, 84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL55", 64, 128
+{
+	Patch "C_WFAL1", 0, 108
+	Patch "C_WFAL1", 0, -20
+	Patch "C_WFAL2", 0, 88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL56", 64, 128
+{
+	Patch "C_WFAL1", 0, 110
+	Patch "C_WFAL1", 0, -18
+	Patch "C_WFAL2", 0, 92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL57", 64, 128
+{
+	Patch "C_WFAL1", 0, 112
+	Patch "C_WFAL1", 0, -16
+	Patch "C_WFAL2", 0, 96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL58", 64, 128
+{
+	Patch "C_WFAL1", 0, 114
+	Patch "C_WFAL1", 0, -14
+	Patch "C_WFAL2", 0, 100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL59", 64, 128
+{
+	Patch "C_WFAL1", 0, 116
+	Patch "C_WFAL1", 0, -12
+	Patch "C_WFAL2", 0, 104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL60", 64, 128
+{
+	Patch "C_WFAL1", 0, 118
+	Patch "C_WFAL1", 0, -10
+	Patch "C_WFAL2", 0, 108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL61", 64, 128
+{
+	Patch "C_WFAL1", 0, 120
+	Patch "C_WFAL1", 0, -8
+	Patch "C_WFAL2", 0, 112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL62", 64, 128
+{
+	Patch "C_WFAL1", 0, 122
+	Patch "C_WFAL1", 0, -6
+	Patch "C_WFAL2", 0, 116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL63", 64, 128
+{
+	Patch "C_WFAL1", 0, 124
+	Patch "C_WFAL1", 0, -4
+	Patch "C_WFAL2", 0, 120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "WFALL64", 64, 128
+{
+	Patch "C_WFAL1", 0, 126
+	Patch "C_WFAL1", 0, -2
+	Patch "C_WFAL2", 0, 124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_WFAL2", 0, -4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}

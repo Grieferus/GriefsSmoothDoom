@@ -1,0 +1,380 @@
+Texture Optional FWATER1, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER2, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_WATER1, -1, -1 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER3, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_WATER1, -2, -2 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER4, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_WATER1, -3, -3 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER5, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_WATER1, -4, -4 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER6, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_WATER1, -5, -5 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER7, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_WATER1, -6, -6 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER8, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_WATER1, -7, -7 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER9, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_WATER1, -8, -8 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER10, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_WATER1, -9, -9 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER11, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_WATER1, -10, -10 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER12, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_WATER1, -11, -11 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER13, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_WATER1, -12, -12 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER14, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_WATER1, -13, -13 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER15, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_WATER1, -14, -14 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER16, 64, 64
+{
+	Patch C_WATER2, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_WATER1, -15, -15 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER17, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER1, -16, -16 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER18, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_WATER1, -17, -17 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER19, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_WATER1, -18, -18 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER20, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_WATER1, -19, -19 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER21, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_WATER1, -20, -20 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER22, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_WATER1, -21, -21 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER23, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_WATER1, -22, -22 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER24, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_WATER1, -23, -23 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER25, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_WATER1, -24, -24 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER26, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_WATER1, -25, -25 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER27, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_WATER1, -26, -26 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER28, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_WATER1, -27, -27 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER29, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_WATER1, -28, -28 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER30, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_WATER1, -29, -29 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER31, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_WATER1, -30, -30 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER32, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER4, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_WATER1, -31, -31 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER33, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER1, -32, -32 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER34, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_WATER1, -33, -33 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER35, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_WATER1, -34, -34 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER36, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_WATER1, -35, -35 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER37, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_WATER1, -36, -36 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER38, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_WATER1, -37, -37 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER39, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_WATER1, -38, -38 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER40, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_WATER1, -39, -39 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER41, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_WATER1, -40, -40 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER42, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.6125 }
+	Patch C_WATER1, -41, -41 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER43, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_WATER1, -42, -42 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER44, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_WATER1, -43, -43 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER45, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_WATER1, -44, -44 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER46, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_WATER1, -45, -45 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER47, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_WATER1, -46, -46 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER48, 64, 64
+{
+	Patch C_WATER4, 0, 0
+	Patch C_WATER3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_WATER1, -47, -47 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER49, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER1, -48, -48 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER50, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_WATER1, -49, -49 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER51, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_WATER1, -50, -50 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER52, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_WATER1, -51, -51 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER53, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_WATER1, -52, -52 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER54, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_WATER1, -53, -53 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER55, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_WATER1, -54, -54 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER56, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_WATER1, -55, -55 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER57, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_WATER1, -56, -56 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER58, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_WATER1, -57, -57 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER59, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_WATER1, -58, -58 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER60, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_WATER1, -59, -59 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER61, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_WATER1, -60, -60 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER62, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_WATER1, -61, -61 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER63, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_WATER1, -62, -62 { Style Translucent; Alpha .5 }
+}
+Texture Optional FWATER64, 64, 64
+{
+	Patch C_WATER3, 0, 0
+	Patch C_WATER2, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_WATER1, -63, -63 { Style Translucent; Alpha .5 }
+}

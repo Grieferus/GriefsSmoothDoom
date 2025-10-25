@@ -1,0 +1,44 @@
+AddOptionMenu "OptionsMenu"
+{
+StaticText " "
+StaticText "Smooth Doom"
+Submenu "Smooth Doom Menu","SmoothDoomMenu"
+}
+
+OptionValue DanzigSongReference
+{
+	0.0, "Brown"
+	1.0, "Black"
+}
+
+OptionMenu "SmoothDoomMenu"
+{
+title "Smooth Doom Options"
+
+
+StaticText " "
+StaticText "Effects Settings",1
+option "Explosions Shake Screen", "sd_rumble", "onoff"
+option "Particle Effects", "sd_fancypuff", "onoff"
+StaticText " "
+StaticText "Gore Settings",1
+option "Blood Pools", "sd_bloodpools", "onoff"
+option "Enhanced Gore", "sd_gore", "onoff"
+option "Pain Elemental Gibs", "sd_paingore", "onoff"
+StaticText " "
+StaticText "Variation Settings",1
+option "Decoration Variants", "sd_decorations", "onoff"
+option "Items Variants", "sd_pickups", "onoff"
+option "Monster Death Variants", "sd_moredeaths", "onoff"
+option "Monster Skin Variants", "sd_variants", "onoff"
+StaticText " "
+StaticText "Gameplay Settings",1
+option "Fast Demon", "sd_fastpinky", "onoff"
+option "Zombieman Drops Rifle", "sd_rifle", "onoff"
+StaticText " "
+StaticText "Weapon Settings",1
+option "Glove Color", "sd_gloves", "DanzigSongReference"
+option "SSG Gibs Enemies", "sd_ssggore", "onoff"
+option "Chainsaw Gibs Enemies", "sd_sawgore", "onoff"
+option "Weapon Kickback", "sd_recoil","onoff"
+}

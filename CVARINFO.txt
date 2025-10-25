@@ -1,0 +1,16 @@
+server int sd_bloodpools = 0; //bloodsplat toggle
+server int sd_decorations = 0;
+server int sd_moredeaths = 1; //death variants toggle
+server int sd_fancypuff = 1;
+server int sd_paingore = 0; //pain elemental gibs toggle
+server int sd_variants = 0; //skin variants toggle
+server int sd_recoil = 0; //recoil toggle
+server int sd_fastpinky = 0;
+server int sd_sparkles = 0; //plasmasparkle toggle
+server int sd_rifle = 0; //rifle toggle
+server int sd_gloves = 0; //glovecolor toggle
+server int sd_ssggore = 0; //SSGgib toggle
+server int sd_rumble = 0; //screen rumble toggle
+server int sd_gore = 0; //giblet toggle
+server int sd_sawgore = 0; //chainsaw gibs enemies
+server int sd_pickups = 0; //pickup variants toggle

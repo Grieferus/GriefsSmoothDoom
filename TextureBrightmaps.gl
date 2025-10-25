@@ -1,0 +1,1076 @@
+// Flats
+brightmap texture LAVA1
+{
+	map "blava1"
+	disablefullbright
+}
+
+brightmap texture LAVA2
+{
+	map "blava2"
+	disablefullbright
+}
+
+brightmap texture LAVA3
+{
+	map "blava3"
+	disablefullbright
+}
+
+brightmap texture LAVA4
+{
+	map "blava4"
+	disablefullbright
+}
+
+brightmap texture LAVA5
+{
+	map "blava5"
+	disablefullbright
+}
+
+brightmap texture LAVA6
+{
+	map "blava6"
+	disablefullbright
+}
+
+brightmap texture LAVA7
+{
+	map "blava7"
+	disablefullbright
+}
+
+brightmap texture LAVA8
+{
+	map "blava8"
+	disablefullbright
+}
+
+brightmap texture LAVA9
+{
+	map "blava9"
+	disablefullbright
+}
+
+brightmap texture LAVA10
+{
+	map "blava10"
+	disablefullbright
+}
+
+brightmap texture LAVA11
+{
+	map "blava11"
+	disablefullbright
+}
+
+brightmap texture LAVA12
+{
+	map "blava12"
+	disablefullbright
+}
+
+brightmap texture LAVA13
+{
+	map "blava13"
+	disablefullbright
+}
+
+brightmap texture LAVA14
+{
+	map "blava14"
+	disablefullbright
+}
+
+brightmap texture LAVA15
+{
+	map "blava15"
+	disablefullbright
+}
+
+brightmap texture LAVA16
+{
+	map "blava16"
+	disablefullbright
+}
+
+brightmap texture LAVA17
+{
+	map "blava17"
+	disablefullbright
+}
+
+brightmap texture LAVA18
+{
+	map "blava18"
+	disablefullbright
+}
+
+brightmap texture LAVA19
+{
+	map "blava19"
+	disablefullbright
+}
+
+brightmap texture LAVA20
+{
+	map "blava20"
+	disablefullbright
+}
+
+brightmap texture LAVA21
+{
+	map "blava21"
+	disablefullbright
+}
+
+brightmap texture LAVA22
+{
+	map "blava22"
+	disablefullbright
+}
+
+brightmap texture LAVA23
+{
+	map "blava23"
+	disablefullbright
+}
+
+brightmap texture LAVA24
+{
+	map "blava24"
+	disablefullbright
+}
+
+brightmap texture LAVA25
+{
+	map "blava25"
+	disablefullbright
+}
+
+brightmap texture LAVA26
+{
+	map "blava26"
+	disablefullbright
+}
+
+brightmap texture LAVA27
+{
+	map "blava27"
+	disablefullbright
+}
+
+brightmap texture LAVA28
+{
+	map "blava28"
+	disablefullbright
+}
+
+brightmap texture LAVA29
+{
+	map "blava29"
+	disablefullbright
+}
+
+brightmap texture LAVA30
+{
+	map "blava30"
+	disablefullbright
+}
+
+brightmap texture LAVA31
+{
+	map "blava31"
+	disablefullbright
+}
+
+brightmap texture LAVA32
+{
+	map "blava32"
+	disablefullbright
+}
+
+brightmap texture LAVA33
+{
+	map "blava33"
+	disablefullbright
+}
+
+brightmap texture LAVA34
+{
+	map "blava34"
+	disablefullbright
+}
+
+brightmap texture LAVA35
+{
+	map "blava35"
+	disablefullbright
+}
+
+brightmap texture LAVA36
+{
+	map "blava36"
+	disablefullbright
+}
+
+brightmap texture LAVA37
+{
+	map "blava37"
+	disablefullbright
+}
+
+brightmap texture LAVA38
+{
+	map "blava38"
+	disablefullbright
+}
+
+brightmap texture LAVA39
+{
+	map "blava39"
+	disablefullbright
+}
+
+brightmap texture LAVA40
+{
+	map "blava40"
+	disablefullbright
+}
+
+brightmap texture LAVA41
+{
+	map "blava41"
+	disablefullbright
+}
+
+brightmap texture LAVA42
+{
+	map "blava42"
+	disablefullbright
+}
+
+brightmap texture LAVA43
+{
+	map "blava43"
+	disablefullbright
+}
+
+brightmap texture LAVA44
+{
+	map "blava44"
+	disablefullbright
+}
+
+brightmap texture LAVA45
+{
+	map "blava45"
+	disablefullbright
+}
+
+brightmap texture LAVA46
+{
+	map "blava46"
+	disablefullbright
+}
+
+brightmap texture LAVA47
+{
+	map "blava47"
+	disablefullbright
+}
+
+brightmap texture LAVA48
+{
+	map "blava48"
+	disablefullbright
+}
+
+brightmap texture LAVA49
+{
+	map "blava49"
+	disablefullbright
+}
+
+brightmap texture LAVA50
+{
+	map "blava50"
+	disablefullbright
+}
+
+brightmap texture LAVA51
+{
+	map "blava51"
+	disablefullbright
+}
+
+brightmap texture NUKAGE1
+{
+	map "bnukage1"
+	disablefullbright
+}
+
+brightmap texture NUKAGE2
+{
+	map "bnukage2"
+	disablefullbright
+}
+
+brightmap texture NUKAGE3
+{
+	map "bnukage3"
+	disablefullbright
+}
+
+brightmap texture NUKAGE4
+{
+	map "bnukage4"
+	disablefullbright
+}
+
+brightmap texture NUKAGE5
+{
+	map "bnukage5"
+	disablefullbright
+}
+
+brightmap texture NUKAGE6
+{
+	map "bnukage6"
+	disablefullbright
+}
+
+brightmap texture NUKAGE7
+{
+	map "bnukage7"
+	disablefullbright
+}
+
+brightmap texture NUKAGE8
+{
+	map "bnukage8"
+	disablefullbright
+}
+
+brightmap texture NUKAGE9
+{
+	map "bnukage9"
+	disablefullbright
+}
+
+brightmap texture NUKAGE10
+{
+	map "bnukage10"
+	disablefullbright
+}
+
+brightmap texture NUKAGE11
+{
+	map "bnukage11"
+	disablefullbright
+}
+
+brightmap texture NUKAGE12
+{
+	map "bnukage12"
+	disablefullbright
+}
+
+brightmap texture NUKAGE13
+{
+	map "bnukage13"
+	disablefullbright
+}
+
+brightmap texture NUKAGE14
+{
+	map "bnukage14"
+	disablefullbright
+}
+
+brightmap texture NUKAGE15
+{
+	map "bnukage15"
+	disablefullbright
+}
+
+brightmap texture NUKAGE16
+{
+	map "bnukage16"
+	disablefullbright
+}
+
+brightmap texture NUKAGE17
+{
+	map "bnukage17"
+	disablefullbright
+}
+
+brightmap texture NUKAGE18
+{
+	map "bnukage18"
+	disablefullbright
+}
+
+brightmap texture NUKAGE19
+{
+	map "bnukage19"
+	disablefullbright
+}
+
+brightmap texture NUKAGE20
+{
+	map "bnukage20"
+	disablefullbright
+}
+
+brightmap texture NUKAGE21
+{
+	map "bnukage21"
+	disablefullbright
+}
+
+brightmap texture NUKAGE22
+{
+	map "bnukage22"
+	disablefullbright
+}
+
+brightmap texture NUKAGE23
+{
+	map "bnukage23"
+	disablefullbright
+}
+
+brightmap texture NUKAGE24
+{
+	map "bnukage24"
+	disablefullbright
+}
+
+brightmap texture NUKAGE25
+{
+	map "bnukage25"
+	disablefullbright
+}
+
+brightmap texture NUKAGE26
+{
+	map "bnukage26"
+	disablefullbright
+}
+
+brightmap texture NUKAGE27
+{
+	map "bnukage27"
+	disablefullbright
+}
+
+brightmap texture NUKAGE28
+{
+	map "bnukage28"
+	disablefullbright
+}
+
+brightmap texture NUKAGE29
+{
+	map "bnukage29"
+	disablefullbright
+}
+
+brightmap texture NUKAGE30
+{
+	map "bnukage30"
+	disablefullbright
+}
+
+brightmap texture NUKAGE31
+{
+	map "bnukage31"
+	disablefullbright
+}
+
+brightmap texture NUKAGE32
+{
+	map "bnukage32"
+	disablefullbright
+}
+
+brightmap texture NUKAGE33
+{
+	map "bnukage33"
+	disablefullbright
+}
+
+brightmap texture NUKAGE34
+{
+	map "bnukage34"
+	disablefullbright
+}
+
+brightmap texture NUKAGE35
+{
+	map "bnukage35"
+	disablefullbright
+}
+
+brightmap texture NUKAGE36
+{
+	map "bnukage36"
+	disablefullbright
+}
+
+brightmap texture NUKAGE37
+{
+	map "bnukage37"
+	disablefullbright
+}
+
+brightmap texture NUKAGE38
+{
+	map "bnukage38"
+	disablefullbright
+}
+
+brightmap texture NUKAGE39
+{
+	map "bnukage39"
+	disablefullbright
+}
+
+brightmap texture NUKAGE40
+{
+	map "bnukage40"
+	disablefullbright
+}
+
+brightmap texture NUKAGE41
+{
+	map "bnukage41"
+	disablefullbright
+}
+
+brightmap texture NUKAGE42
+{
+	map "bnukage42"
+	disablefullbright
+}
+
+brightmap texture NUKAGE43
+{
+	map "bnukage43"
+	disablefullbright
+}
+
+brightmap texture NUKAGE44
+{
+	map "bnukage44"
+	disablefullbright
+}
+
+brightmap texture NUKAGE45
+{
+	map "bnukage45"
+	disablefullbright
+}
+
+brightmap texture NUKAGE46
+{
+	map "bnukage46"
+	disablefullbright
+}
+
+brightmap texture NUKAGE47
+{
+	map "bnukage47"
+	disablefullbright
+}
+
+brightmap texture NUKAGE48
+{
+	map "bnukage48"
+	disablefullbright
+}
+
+brightmap texture NUKAGE49
+{
+	map "bnukage49"
+	disablefullbright
+}
+
+brightmap texture NUKAGE50
+{
+	map "bnukage50"
+	disablefullbright
+}
+
+brightmap texture NUKAGE51
+{
+	map "bnukage51"
+	disablefullbright
+}
+
+brightmap texture NUKAGE52
+{
+	map "bnukage52"
+	disablefullbright
+}
+
+brightmap texture NUKAGE53
+{
+	map "bnukage53"
+	disablefullbright
+}
+
+brightmap texture NUKAGE54
+{
+	map "bnukage54"
+	disablefullbright
+}
+
+brightmap texture NUKAGE55
+{
+	map "bnukage55"
+	disablefullbright
+}
+
+brightmap texture NUKAGE56
+{
+	map "bnukage56"
+	disablefullbright
+}
+
+brightmap texture NUKAGE57
+{
+	map "bnukage57"
+	disablefullbright
+}
+
+brightmap texture NUKAGE58
+{
+	map "bnukage58"
+	disablefullbright
+}
+
+brightmap texture NUKAGE59
+{
+	map "bnukage59"
+	disablefullbright
+}
+
+brightmap texture NUKAGE60
+{
+	map "bnukage60"
+	disablefullbright
+}
+
+brightmap texture NUKAGE61
+{
+	map "bnukage61"
+	disablefullbright
+}
+
+brightmap texture NUKAGE62
+{
+	map "bnukage62"
+	disablefullbright
+}
+
+brightmap texture NUKAGE63
+{
+	map "bnukage63"
+	disablefullbright
+}
+
+brightmap texture NUKAGE64
+{
+	map "bnukage64"
+	disablefullbright
+}
+
+// Textures
+
+brightmap texture SFAAL1
+{
+	map "bsfall1"
+	disablefullbright
+}
+
+brightmap texture SFAAL2
+{
+	map "bsfall2"
+	disablefullbright
+}
+
+brightmap texture SFAAL3
+{
+	map "bsfall3"
+	disablefullbright
+}
+
+brightmap texture SFAAL4
+{
+	map "bsfall4"
+	disablefullbright
+}
+
+brightmap texture SFAAL5
+{
+	map "bsfall5"
+	disablefullbright
+}
+
+brightmap texture SFAAL6
+{
+	map "bsfall6"
+	disablefullbright
+}
+
+brightmap texture SFAAL7
+{
+	map "bsfall7"
+	disablefullbright
+}
+
+brightmap texture SFAAL8
+{
+	map "bsfall8"
+	disablefullbright
+}
+
+brightmap texture SFAAL9
+{
+	map "bsfall9"
+	disablefullbright
+}
+
+brightmap texture SFAAL10
+{
+	map "bsfall10"
+	disablefullbright
+}
+
+brightmap texture SFAAL11
+{
+	map "bsfall11"
+	disablefullbright
+}
+
+brightmap texture SFAAL12
+{
+	map "bsfall12"
+	disablefullbright
+}
+
+brightmap texture SFAAL13
+{
+	map "bsfall13"
+	disablefullbright
+}
+
+brightmap texture SFAAL14
+{
+	map "bsfall14"
+	disablefullbright
+}
+
+brightmap texture SFAAL15
+{
+	map "bsfall15"
+	disablefullbright
+}
+
+brightmap texture SFAAL16
+{
+	map "bsfall16"
+	disablefullbright
+}
+
+brightmap texture SFAAL17
+{
+	map "bsfall17"
+	disablefullbright
+}
+
+brightmap texture SFAAL18
+{
+	map "bsfall18"
+	disablefullbright
+}
+
+brightmap texture SFAAL19
+{
+	map "bsfall19"
+	disablefullbright
+}
+
+brightmap texture SFAAL20
+{
+	map "bsfall20"
+	disablefullbright
+}
+
+brightmap texture SFAAL21
+{
+	map "bsfall21"
+	disablefullbright
+}
+
+brightmap texture SFAAL22
+{
+	map "bsfall22"
+	disablefullbright
+}
+
+brightmap texture SFAAL23
+{
+	map "bsfall23"
+	disablefullbright
+}
+
+brightmap texture SFAAL24
+{
+	map "bsfall24"
+	disablefullbright
+}
+
+brightmap texture SFAAL25
+{
+	map "bsfall25"
+	disablefullbright
+}
+
+brightmap texture SFAAL26
+{
+	map "bsfall26"
+	disablefullbright
+}
+
+brightmap texture SFAAL27
+{
+	map "bsfall27"
+	disablefullbright
+}
+
+brightmap texture SFAAL28
+{
+	map "bsfall28"
+	disablefullbright
+}
+
+brightmap texture SFAAL29
+{
+	map "bsfall29"
+	disablefullbright
+}
+
+brightmap texture SFAAL30
+{
+	map "bsfall30"
+	disablefullbright
+}
+
+brightmap texture SFAAL31
+{
+	map "bsfall31"
+	disablefullbright
+}
+
+brightmap texture SFAAL32
+{
+	map "bsfall32"
+	disablefullbright
+}
+
+brightmap texture SFAAL33
+{
+	map "bsfall33"
+	disablefullbright
+}
+
+brightmap texture SFAAL34
+{
+	map "bsfall34"
+	disablefullbright
+}
+
+brightmap texture SFAAL35
+{
+	map "bsfall35"
+	disablefullbright
+}
+
+brightmap texture SFAAL36
+{
+	map "bsfall36"
+	disablefullbright
+}
+
+brightmap texture SFAAL37
+{
+	map "bsfall37"
+	disablefullbright
+}
+
+brightmap texture SFAAL38
+{
+	map "bsfall38"
+	disablefullbright
+}
+
+brightmap texture SFAAL39
+{
+	map "bsfall39"
+	disablefullbright
+}
+
+brightmap texture SFAAL40
+{
+	map "bsfall40"
+	disablefullbright
+}
+
+brightmap texture SFAAL41
+{
+	map "bsfall41"
+	disablefullbright
+}
+
+brightmap texture SFAAL42
+{
+	map "bsfall42"
+	disablefullbright
+}
+
+brightmap texture SFAAL43
+{
+	map "bsfall43"
+	disablefullbright
+}
+
+brightmap texture SFAAL44
+{
+	map "bsfall44"
+	disablefullbright
+}
+
+brightmap texture SFAAL45
+{
+	map "bsfall45"
+	disablefullbright
+}
+
+brightmap texture SFAAL46
+{
+	map "bsfall46"
+	disablefullbright
+}
+
+brightmap texture SFAAL47
+{
+	map "bsfall47"
+	disablefullbright
+}
+
+brightmap texture SFAAL48
+{
+	map "bsfall48"
+	disablefullbright
+}
+
+brightmap texture SFAAL49
+{
+	map "bsfall49"
+	disablefullbright
+}
+
+brightmap texture SFAAL50
+{
+	map "bsfall50"
+	disablefullbright
+}
+
+brightmap texture SFAAL51
+{
+	map "bsfall51"
+	disablefullbright
+}
+
+brightmap texture SFAAL52
+{
+	map "bsfall52"
+	disablefullbright
+}
+
+brightmap texture SFAAL53
+{
+	map "bsfall53"
+	disablefullbright
+}
+
+brightmap texture SFAAL54
+{
+	map "bsfall54"
+	disablefullbright
+}
+
+brightmap texture SFAAL55
+{
+	map "bsfall55"
+	disablefullbright
+}
+
+brightmap texture SFAAL56
+{
+	map "bsfall56"
+	disablefullbright
+}
+
+brightmap texture SFAAL57
+{
+	map "bsfall57"
+	disablefullbright
+}
+
+brightmap texture SFAAL58
+{
+	map "bsfall58"
+	disablefullbright
+}
+
+brightmap texture SFAAL59
+{
+	map "bsfall59"
+	disablefullbright
+}
+
+brightmap texture SFAAL60
+{
+	map "bsfall60"
+	disablefullbright
+}
+
+brightmap texture SFAAL61
+{
+	map "bsfall61"
+	disablefullbright
+}
+
+brightmap texture SFAAL62
+{
+	map "bsfall62"
+	disablefullbright
+}
+
+brightmap texture SFAAL63
+{
+	map "bsfall63"
+	disablefullbright
+}
+
+brightmap texture SFAAL64
+{
+	map "bsfall64"
+	disablefullbright
+}

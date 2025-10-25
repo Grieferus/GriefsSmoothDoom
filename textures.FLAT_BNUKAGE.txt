@@ -1,0 +1,380 @@
+Texture Optional BNUKAGE1, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE2, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKB1, -1, -1 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE3, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKB1, -2, -2 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE4, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKB1, -3, -3 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE5, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKB1, -4, -4 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE6, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKB1, -5, -5 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE7, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKB1, -6, -6 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE8, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKB1, -7, -7 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE9, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKB1, -8, -8 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE10, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKB1, -9, -9 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE11, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKB1, -10, -10 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE12, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKB1, -11, -11 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE13, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKB1, -12, -12 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE14, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKB1, -13, -13 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE15, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKB1, -14, -14 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE16, 64, 64
+{
+	Patch C_NUKB2, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKB1, -15, -15 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE17, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB1, -16, -16 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE18, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKB1, -17, -17 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE19, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKB1, -18, -18 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE20, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKB1, -19, -19 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE21, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKB1, -20, -20 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE22, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKB1, -21, -21 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE23, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKB1, -22, -22 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE24, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKB1, -23, -23 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE25, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKB1, -24, -24 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE26, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKB1, -25, -25 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE27, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKB1, -26, -26 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE28, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKB1, -27, -27 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE29, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKB1, -28, -28 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE30, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKB1, -29, -29 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE31, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKB1, -30, -30 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE32, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB4, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKB1, -31, -31 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE33, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB1, -32, -32 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE34, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKB1, -33, -33 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE35, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKB1, -34, -34 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE36, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKB1, -35, -35 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE37, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKB1, -36, -36 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE38, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKB1, -37, -37 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE39, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKB1, -38, -38 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE40, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKB1, -39, -39 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE41, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKB1, -40, -40 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE42, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.6125 }
+	Patch C_NUKB1, -41, -41 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE43, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKB1, -42, -42 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE44, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKB1, -43, -43 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE45, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKB1, -44, -44 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE46, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKB1, -45, -45 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE47, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKB1, -46, -46 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE48, 64, 64
+{
+	Patch C_NUKB4, 0, 0
+	Patch C_NUKB3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKB1, -47, -47 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE49, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB1, -48, -48 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE50, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKB1, -49, -49 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE51, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKB1, -50, -50 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE52, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKB1, -51, -51 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE53, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKB1, -52, -52 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE54, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKB1, -53, -53 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE55, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKB1, -54, -54 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE56, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKB1, -55, -55 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE57, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKB1, -56, -56 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE58, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKB1, -57, -57 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE59, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKB1, -58, -58 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE60, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKB1, -59, -59 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE61, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKB1, -60, -60 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE62, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKB1, -61, -61 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE63, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKB1, -62, -62 { Style Translucent; Alpha .5 }
+}
+Texture Optional BNUKAGE64, 64, 64
+{
+	Patch C_NUKB3, 0, 0
+	Patch C_NUKB2, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKB1, -63, -63 { Style Translucent; Alpha .5 }
+}

@@ -1,0 +1,380 @@
+Texture Optional NUKAGE1, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE2, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKE1, -1, -1 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE3, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKE1, -2, -2 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE4, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKE1, -3, -3 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE5, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKE1, -4, -4 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE6, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKE1, -5, -5 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE7, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKE1, -6, -6 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE8, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKE1, -7, -7 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE9, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKE1, -8, -8 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE10, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKE1, -9, -9 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE11, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKE1, -10, -10 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE12, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKE1, -11, -11 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE13, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKE1, -12, -12 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE14, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKE1, -13, -13 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE15, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKE1, -14, -14 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE16, 64, 64
+{
+	Patch C_NUKE2, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKE1, -15, -15 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE17, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE1, -16, -16 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE18, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKE1, -17, -17 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE19, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKE1, -18, -18 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE20, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKE1, -19, -19 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE21, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKE1, -20, -20 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE22, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKE1, -21, -21 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE23, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKE1, -22, -22 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE24, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKE1, -23, -23 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE25, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKE1, -24, -24 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE26, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKE1, -25, -25 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE27, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKE1, -26, -26 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE28, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKE1, -27, -27 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE29, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKE1, -28, -28 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE30, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKE1, -29, -29 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE31, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKE1, -30, -30 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE32, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE4, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKE1, -31, -31 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE33, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE1, -32, -32 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE34, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKE1, -33, -33 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE35, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKE1, -34, -34 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE36, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKE1, -35, -35 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE37, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKE1, -36, -36 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE38, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKE1, -37, -37 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE39, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKE1, -38, -38 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE40, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKE1, -39, -39 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE41, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKE1, -40, -40 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE42, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.6125 }
+	Patch C_NUKE1, -41, -41 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE43, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKE1, -42, -42 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE44, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKE1, -43, -43 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE45, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKE1, -44, -44 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE46, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKE1, -45, -45 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE47, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKE1, -46, -46 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE48, 64, 64
+{
+	Patch C_NUKE4, 0, 0
+	Patch C_NUKE3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKE1, -47, -47 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE49, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE1, -48, -48 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE50, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_NUKE1, -49, -49 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE51, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_NUKE1, -50, -50 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE52, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_NUKE1, -51, -51 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE53, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_NUKE1, -52, -52 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE54, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_NUKE1, -53, -53 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE55, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_NUKE1, -54, -54 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE56, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_NUKE1, -55, -55 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE57, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_NUKE1, -56, -56 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE58, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_NUKE1, -57, -57 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE59, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_NUKE1, -58, -58 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE60, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_NUKE1, -59, -59 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE61, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_NUKE1, -60, -60 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE62, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_NUKE1, -61, -61 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE63, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_NUKE1, -62, -62 { Style Translucent; Alpha .5 }
+}
+Texture Optional NUKAGE64, 64, 64
+{
+	Patch C_NUKE3, 0, 0
+	Patch C_NUKE2, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_NUKE1, -63, -63 { Style Translucent; Alpha .5 }
+}

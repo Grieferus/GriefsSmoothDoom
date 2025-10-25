@@ -1,0 +1,4 @@
+#include "ObjectLights.gl"
+#include "SpriteBrightmaps.gl"
+#include "MonsterBrightmaps.gl"
+#include "TextureBrightmaps.gl"

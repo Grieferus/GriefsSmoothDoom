@@ -1,0 +1,380 @@
+Texture Optional GOOP1, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP2, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_GOOP1, -1, -1 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP3, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_GOOP1, -2, -2 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP4, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_GOOP1, -3, -3 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP5, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_GOOP1, -4, -4 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP6, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_GOOP1, -5, -5 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP7, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_GOOP1, -6, -6 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP8, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_GOOP1, -7, -7 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP9, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_GOOP1, -8, -8 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP10, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_GOOP1, -9, -9 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP11, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_GOOP1, -10, -10 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP12, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_GOOP1, -11, -11 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP13, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_GOOP1, -12, -12 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP14, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_GOOP1, -13, -13 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP15, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_GOOP1, -14, -14 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP16, 64, 64
+{
+	Patch C_GOOP2, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_GOOP1, -15, -15 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP17, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP1, -16, -16 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP18, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_GOOP1, -17, -17 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP19, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_GOOP1, -18, -18 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP20, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_GOOP1, -19, -19 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP21, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_GOOP1, -20, -20 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP22, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_GOOP1, -21, -21 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP23, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_GOOP1, -22, -22 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP24, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_GOOP1, -23, -23 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP25, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_GOOP1, -24, -24 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP26, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_GOOP1, -25, -25 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP27, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_GOOP1, -26, -26 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP28, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_GOOP1, -27, -27 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP29, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_GOOP1, -28, -28 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP30, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_GOOP1, -29, -29 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP31, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_GOOP1, -30, -30 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP32, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP4, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_GOOP1, -31, -31 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP33, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP1, -32, -32 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP34, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_GOOP1, -33, -33 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP35, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_GOOP1, -34, -34 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP36, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_GOOP1, -35, -35 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP37, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_GOOP1, -36, -36 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP38, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_GOOP1, -37, -37 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP39, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_GOOP1, -38, -38 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP40, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_GOOP1, -39, -39 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP41, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_GOOP1, -40, -40 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP42, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.6125 }
+	Patch C_GOOP1, -41, -41 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP43, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_GOOP1, -42, -42 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP44, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_GOOP1, -43, -43 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP45, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_GOOP1, -44, -44 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP46, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_GOOP1, -45, -45 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP47, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_GOOP1, -46, -46 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP48, 64, 64
+{
+	Patch C_GOOP4, 0, 0
+	Patch C_GOOP3, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_GOOP1, -47, -47 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP49, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP1, -48, -48 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP50, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.0625 }
+	Patch C_GOOP1, -49, -49 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP51, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.125 }
+	Patch C_GOOP1, -50, -50 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP52, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.1875 }
+	Patch C_GOOP1, -51, -51 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP53, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.25 }
+	Patch C_GOOP1, -52, -52 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP54, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.3125 }
+	Patch C_GOOP1, -53, -53 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP55, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.375 }
+	Patch C_GOOP1, -54, -54 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP56, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.4375 }
+	Patch C_GOOP1, -55, -55 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP57, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.5 }
+	Patch C_GOOP1, -56, -56 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP58, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.5625 }
+	Patch C_GOOP1, -57, -57 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP59, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.625 }
+	Patch C_GOOP1, -58, -58 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP60, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.6875 }
+	Patch C_GOOP1, -59, -59 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP61, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.75 }
+	Patch C_GOOP1, -60, -60 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP62, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.8125 }
+	Patch C_GOOP1, -61, -61 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP63, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.875 }
+	Patch C_GOOP1, -62, -62 { Style Translucent; Alpha .5 }
+}
+Texture Optional GOOP64, 64, 64
+{
+	Patch C_GOOP3, 0, 0
+	Patch C_GOOP2, 0, 0 { Style Translucent; Alpha 0.9375 }
+	Patch C_GOOP1, -63, -63 { Style Translucent; Alpha .5 }
+}

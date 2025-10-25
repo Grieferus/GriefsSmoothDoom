@@ -1,0 +1,251 @@
+Texture Optional LAVA1, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+}
+Texture Optional LAVA2, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .19 }
+}
+Texture Optional LAVA3, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .31 }
+}
+Texture Optional LAVA4, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .38 }
+}
+Texture Optional LAVA5, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .44 }
+}
+Texture Optional LAVA6, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional LAVA7, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .56 }
+}
+Texture Optional LAVA8, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .62 }
+}
+Texture Optional LAVA9, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .69 }
+}
+Texture Optional LAVA10, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .75 }
+}
+Texture Optional LAVA11, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .81 }
+}
+Texture Optional LAVA12, 64, 64
+{
+	Patch C_LAVA1, 0, 0
+	Patch C_LAVA2, 0, 0 { Style Translucent; Alpha .88 }
+}
+Texture Optional LAVA13, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+}
+Texture Optional LAVA14, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .19 }
+}
+Texture Optional LAVA15, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .25 }
+}
+Texture Optional LAVA16, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .31 }
+}
+Texture Optional LAVA17, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .38 }
+}
+Texture Optional LAVA18, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .44 }
+}
+Texture Optional LAVA19, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional LAVA20, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .56 }
+}
+Texture Optional LAVA21, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .62 }
+}
+Texture Optional LAVA22, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .69 }
+}
+Texture Optional LAVA23, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .75 }
+}
+Texture Optional LAVA24, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .81 }
+}
+Texture Optional LAVA25, 64, 64
+{
+	Patch C_LAVA2, 0, 0
+	Patch C_LAVA3, 0, 0 { Style Translucent; Alpha .88 }
+}
+Texture Optional LAVA26, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+}
+Texture Optional LAVA27, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .12 }
+}
+Texture Optional LAVA28, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .19 }
+}
+Texture Optional LAVA29, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .25 }
+}
+Texture Optional LAVA30, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .31 }
+}
+Texture Optional LAVA31, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .38 }
+}
+Texture Optional LAVA32, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .44 }
+}
+Texture Optional LAVA33, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional LAVA34, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .56 }
+}
+Texture Optional LAVA35, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .62 }
+}
+Texture Optional LAVA36, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .69 }
+}
+Texture Optional LAVA37, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .75 }
+}
+Texture Optional LAVA38, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .81 }
+}
+Texture Optional LAVA39, 64, 64
+{
+	Patch C_LAVA3, 0, 0
+	Patch C_LAVA4, 0, 0 { Style Translucent; Alpha .88 }
+}
+Texture Optional LAVA40, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+}
+Texture Optional LAVA41, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .19 }
+}
+Texture Optional LAVA42, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .25 }
+}
+Texture Optional LAVA43, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .31 }
+}
+Texture Optional LAVA44, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .38 }
+}
+Texture Optional LAVA45, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .44 }
+}
+Texture Optional LAVA46, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .5 }
+}
+Texture Optional LAVA47, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .56 }
+}
+Texture Optional LAVA48, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .62 }
+}
+Texture Optional LAVA49, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .69 }
+}
+Texture Optional LAVA50, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .75 }
+}
+Texture Optional LAVA51, 64, 64
+{
+	Patch C_LAVA4, 0, 0
+	Patch C_LAVA1, 0, 0 { Style Translucent; Alpha .81 }
+}

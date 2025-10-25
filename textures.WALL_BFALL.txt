@@ -1,0 +1,1012 @@
+Texture Optional "BFALL1", 64, 128
+{
+	Patch "C_BFAL1", 0, 0
+	Patch "C_BFAL2", 0, 0
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL2", 64, 128
+{
+	Patch "C_BFAL1", 0, 2
+	Patch "C_BFAL1", 0, -126
+	Patch "C_BFAL2", 0, 4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL3", 64, 128
+{
+	Patch "C_BFAL1", 0, 4
+	Patch "C_BFAL1", 0, -124
+	Patch "C_BFAL2", 0, 8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL4", 64, 128
+{
+	Patch "C_BFAL1", 0, 6
+	Patch "C_BFAL1", 0, -122
+	Patch "C_BFAL2", 0, 12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL5", 64, 128
+{
+	Patch "C_BFAL1", 0, 8
+	Patch "C_BFAL1", 0, -120
+	Patch "C_BFAL2", 0, 16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL6", 64, 128
+{
+	Patch "C_BFAL1", 0, 10
+	Patch "C_BFAL1", 0, -118
+	Patch "C_BFAL2", 0, 20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL7", 64, 128
+{
+	Patch "C_BFAL1", 0, 12
+	Patch "C_BFAL1", 0, -116
+	Patch "C_BFAL2", 0, 24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL8", 64, 128
+{
+	Patch "C_BFAL1", 0, 14
+	Patch "C_BFAL1", 0, -114
+	Patch "C_BFAL2", 0, 28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL9", 64, 128
+{
+	Patch "C_BFAL1", 0, 16
+	Patch "C_BFAL1", 0, -112
+	Patch "C_BFAL2", 0, 32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL10", 64, 128
+{
+	Patch "C_BFAL1", 0, 18
+	Patch "C_BFAL1", 0, -110
+	Patch "C_BFAL2", 0, 36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL11", 64, 128
+{
+	Patch "C_BFAL1", 0, 20
+	Patch "C_BFAL1", 0, -108
+	Patch "C_BFAL2", 0, 40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL12", 64, 128
+{
+	Patch "C_BFAL1", 0, 22
+	Patch "C_BFAL1", 0, -106
+	Patch "C_BFAL2", 0, 44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL13", 64, 128
+{
+	Patch "C_BFAL1", 0, 24
+	Patch "C_BFAL1", 0, -104
+	Patch "C_BFAL2", 0, 48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL14", 64, 128
+{
+	Patch "C_BFAL1", 0, 26
+	Patch "C_BFAL1", 0, -102
+	Patch "C_BFAL2", 0, 52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL15", 64, 128
+{
+	Patch "C_BFAL1", 0, 28
+	Patch "C_BFAL1", 0, -100
+	Patch "C_BFAL2", 0, 56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL16", 64, 128
+{
+	Patch "C_BFAL1", 0, 30
+	Patch "C_BFAL1", 0, -98
+	Patch "C_BFAL2", 0, 60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL17", 64, 128
+{
+	Patch "C_BFAL1", 0, 32
+	Patch "C_BFAL1", 0, -96
+	Patch "C_BFAL2", 0, 64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL18", 64, 128
+{
+	Patch "C_BFAL1", 0, 34
+	Patch "C_BFAL1", 0, -94
+	Patch "C_BFAL2", 0, 68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL19", 64, 128
+{
+	Patch "C_BFAL1", 0, 36
+	Patch "C_BFAL1", 0, -92
+	Patch "C_BFAL2", 0, 72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL20", 64, 128
+{
+	Patch "C_BFAL1", 0, 38
+	Patch "C_BFAL1", 0, -90
+	Patch "C_BFAL2", 0, 76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL21", 64, 128
+{
+	Patch "C_BFAL1", 0, 40
+	Patch "C_BFAL1", 0, -88
+	Patch "C_BFAL2", 0, 80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL22", 64, 128
+{
+	Patch "C_BFAL1", 0, 42
+	Patch "C_BFAL1", 0, -86
+	Patch "C_BFAL2", 0, 84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL23", 64, 128
+{
+	Patch "C_BFAL1", 0, 44
+	Patch "C_BFAL1", 0, -84
+	Patch "C_BFAL2", 0, 88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL24", 64, 128
+{
+	Patch "C_BFAL1", 0, 46
+	Patch "C_BFAL1", 0, -82
+	Patch "C_BFAL2", 0, 92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL25", 64, 128
+{
+	Patch "C_BFAL1", 0, 48
+	Patch "C_BFAL1", 0, -80
+	Patch "C_BFAL2", 0, 96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL26", 64, 128
+{
+	Patch "C_BFAL1", 0, 50
+	Patch "C_BFAL1", 0, -78
+	Patch "C_BFAL2", 0, 100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL27", 64, 128
+{
+	Patch "C_BFAL1", 0, 52
+	Patch "C_BFAL1", 0, -76
+	Patch "C_BFAL2", 0, 104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL28", 64, 128
+{
+	Patch "C_BFAL1", 0, 54
+	Patch "C_BFAL1", 0, -74
+	Patch "C_BFAL2", 0, 108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL29", 64, 128
+{
+	Patch "C_BFAL1", 0, 56
+	Patch "C_BFAL1", 0, -72
+	Patch "C_BFAL2", 0, 112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL30", 64, 128
+{
+	Patch "C_BFAL1", 0, 58
+	Patch "C_BFAL1", 0, -70
+	Patch "C_BFAL2", 0, 116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL31", 64, 128
+{
+	Patch "C_BFAL1", 0, 60
+	Patch "C_BFAL1", 0, -68
+	Patch "C_BFAL2", 0, 120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL32", 64, 128
+{
+	Patch "C_BFAL1", 0, 62
+	Patch "C_BFAL1", 0, -66
+	Patch "C_BFAL2", 0, 124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL33", 64, 128
+{
+	Patch "C_BFAL1", 0, 64
+	Patch "C_BFAL1", 0, -64
+	Patch "C_BFAL2", 0, 0
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL34", 64, 128
+{
+	Patch "C_BFAL1", 0, 66
+	Patch "C_BFAL1", 0, -62
+	Patch "C_BFAL2", 0, 4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL35", 64, 128
+{
+	Patch "C_BFAL1", 0, 68
+	Patch "C_BFAL1", 0, -60
+	Patch "C_BFAL2", 0, 8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL36", 64, 128
+{
+	Patch "C_BFAL1", 0, 70
+	Patch "C_BFAL1", 0, -58
+	Patch "C_BFAL2", 0, 12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL37", 64, 128
+{
+	Patch "C_BFAL1", 0, 72
+	Patch "C_BFAL1", 0, -56
+	Patch "C_BFAL2", 0, 16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL38", 64, 128
+{
+	Patch "C_BFAL1", 0, 74
+	Patch "C_BFAL1", 0, -54
+	Patch "C_BFAL2", 0, 20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL39", 64, 128
+{
+	Patch "C_BFAL1", 0, 76
+	Patch "C_BFAL1", 0, -52
+	Patch "C_BFAL2", 0, 24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL40", 64, 128
+{
+	Patch "C_BFAL1", 0, 78
+	Patch "C_BFAL1", 0, -50
+	Patch "C_BFAL2", 0, 28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL41", 64, 128
+{
+	Patch "C_BFAL1", 0, 80
+	Patch "C_BFAL1", 0, -48
+	Patch "C_BFAL2", 0, 32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL42", 64, 128
+{
+	Patch "C_BFAL1", 0, 82
+	Patch "C_BFAL1", 0, -46
+	Patch "C_BFAL2", 0, 36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL43", 64, 128
+{
+	Patch "C_BFAL1", 0, 84
+	Patch "C_BFAL1", 0, -44
+	Patch "C_BFAL2", 0, 40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL44", 64, 128
+{
+	Patch "C_BFAL1", 0, 86
+	Patch "C_BFAL1", 0, -42
+	Patch "C_BFAL2", 0, 44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL45", 64, 128
+{
+	Patch "C_BFAL1", 0, 88
+	Patch "C_BFAL1", 0, -40
+	Patch "C_BFAL2", 0, 48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL46", 64, 128
+{
+	Patch "C_BFAL1", 0, 90
+	Patch "C_BFAL1", 0, -38
+	Patch "C_BFAL2", 0, 52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL47", 64, 128
+{
+	Patch "C_BFAL1", 0, 92
+	Patch "C_BFAL1", 0, -36
+	Patch "C_BFAL2", 0, 56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL48", 64, 128
+{
+	Patch "C_BFAL1", 0, 94
+	Patch "C_BFAL1", 0, -34
+	Patch "C_BFAL2", 0, 60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL49", 64, 128
+{
+	Patch "C_BFAL1", 0, 96
+	Patch "C_BFAL1", 0, -32
+	Patch "C_BFAL2", 0, 64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -64
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL50", 64, 128
+{
+	Patch "C_BFAL1", 0, 98
+	Patch "C_BFAL1", 0, -30
+	Patch "C_BFAL2", 0, 68
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -60
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL51", 64, 128
+{
+	Patch "C_BFAL1", 0, 100
+	Patch "C_BFAL1", 0, -28
+	Patch "C_BFAL2", 0, 72
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -56
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL52", 64, 128
+{
+	Patch "C_BFAL1", 0, 102
+	Patch "C_BFAL1", 0, -26
+	Patch "C_BFAL2", 0, 76
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -52
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL53", 64, 128
+{
+	Patch "C_BFAL1", 0, 104
+	Patch "C_BFAL1", 0, -24
+	Patch "C_BFAL2", 0, 80
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -48
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL54", 64, 128
+{
+	Patch "C_BFAL1", 0, 106
+	Patch "C_BFAL1", 0, -22
+	Patch "C_BFAL2", 0, 84
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -44
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL55", 64, 128
+{
+	Patch "C_BFAL1", 0, 108
+	Patch "C_BFAL1", 0, -20
+	Patch "C_BFAL2", 0, 88
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -40
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL56", 64, 128
+{
+	Patch "C_BFAL1", 0, 110
+	Patch "C_BFAL1", 0, -18
+	Patch "C_BFAL2", 0, 92
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -36
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL57", 64, 128
+{
+	Patch "C_BFAL1", 0, 112
+	Patch "C_BFAL1", 0, -16
+	Patch "C_BFAL2", 0, 96
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -32
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL58", 64, 128
+{
+	Patch "C_BFAL1", 0, 114
+	Patch "C_BFAL1", 0, -14
+	Patch "C_BFAL2", 0, 100
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -28
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL59", 64, 128
+{
+	Patch "C_BFAL1", 0, 116
+	Patch "C_BFAL1", 0, -12
+	Patch "C_BFAL2", 0, 104
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -24
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL60", 64, 128
+{
+	Patch "C_BFAL1", 0, 118
+	Patch "C_BFAL1", 0, -10
+	Patch "C_BFAL2", 0, 108
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -20
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL61", 64, 128
+{
+	Patch "C_BFAL1", 0, 120
+	Patch "C_BFAL1", 0, -8
+	Patch "C_BFAL2", 0, 112
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -16
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL62", 64, 128
+{
+	Patch "C_BFAL1", 0, 122
+	Patch "C_BFAL1", 0, -6
+	Patch "C_BFAL2", 0, 116
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -12
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL63", 64, 128
+{
+	Patch "C_BFAL1", 0, 124
+	Patch "C_BFAL1", 0, -4
+	Patch "C_BFAL2", 0, 120
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -8
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}
+
+Texture Optional "BFALL64", 64, 128
+{
+	Patch "C_BFAL1", 0, 126
+	Patch "C_BFAL1", 0, -2
+	Patch "C_BFAL2", 0, 124
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+	Patch "C_BFAL2", 0, -4
+	{
+		Alpha 0.50
+		Style Translucent
+	}
+}

@@ -1,0 +1,299 @@
+Sprite "PKFSF0", 164, 108
+{
+	Offset -15, -98
+	Patch "PKFSE0", 0, 0
+}
+
+Sprite "PKFSH0", 146, 97
+{
+	Offset -19, -109
+	Patch "PKFSG0", 0, 0
+}
+
+Sprite "PKFSJ0", 150, 84
+{
+	Offset -6, -122
+	Patch "PKFSI0", 0, 0
+}
+
+Sprite "PKFSN0", 243, 74
+{
+	Offset -54, -131
+	Patch "PKFSA0", 0, 0
+}
+
+Sprite "BKFSF0", 164, 108
+{
+	Offset -15, -98
+	Patch "BKFSE0", 0, 0
+}
+
+Sprite "BKFSH0", 146, 97
+{
+	Offset -19, -109
+	Patch "BKFSG0", 0, 0
+}
+
+Sprite "BKFSJ0", 150, 84
+{
+	Offset -6, -122
+	Patch "BKFSI0", 0, 0
+}
+
+Sprite "BKFSN0", 243, 74
+{
+	Offset -54, -131
+	Patch "BKFSA0", 0, 0
+}
+
+Sprite "PKPIJ0", 116, 114
+{
+	Offset -67, -95
+	Patch "PKPIB0", 0, 0
+}
+
+Sprite "BKPIJ0", 116, 114
+{
+	Offset -67, -95
+	Patch "BKPIB0", 0, 0
+}
+
+Sprite "PKSGC0", 152, 113
+{
+	Offset -34, -102
+	Patch "PKSGB0", 0, 0
+}
+
+Sprite "PKSGE0", 157, 140
+{
+	Offset -16, -67
+	Patch "PKSGD0", 0, 0
+}
+
+Sprite "PKSGG0", 150, 153
+{
+	Offset -9, -48
+	Patch "PKSGF0", 0, 0
+}
+
+Sprite "PKSGI0", 124, 183
+{
+	Offset -6, -30
+	Patch "PKSGH0", 0, 0
+}
+
+Sprite "PKSGL0", 110, 180
+{
+	Offset -29, -42
+	Patch "PKSGK0", 0, 0
+}
+
+Sprite "BKSGC0", 152, 113
+{
+	Offset -34, -102
+	Patch "BKSGB0", 0, 0
+}
+
+Sprite "BKSGE0", 157, 140
+{
+	Offset -16, -67
+	Patch "BKSGD0", 0, 0
+}
+
+Sprite "BKSGG0", 150, 153
+{
+	Offset -9, -48
+	Patch "BKSGF0", 0, 0
+}
+
+Sprite "BKSGI0", 124, 183
+{
+	Offset -6, -30
+	Patch "BKSGH0", 0, 0
+}
+
+Sprite "BKSGL0", 110, 180
+{
+	Offset -29, -42
+	Patch "BKSGK0", 0, 0
+}
+
+Sprite "PKS2C0", 76, 76
+{
+	Offset -120, -94
+	Patch "PKS2B0", 0, 0
+}
+
+Sprite "PKS2E0", 83, 103
+{
+	Offset -94, -66
+	Patch "PKS2D0", 0, 0
+}
+
+Sprite "PKS2G0", 108, 130
+{
+	Offset -62, -44
+	Patch "PKS2F0", 0, 0
+}
+
+Sprite "PKS2W0", 81, 80
+{
+	Offset -121, -92
+	Patch "PKS2I0", 0, 0
+}
+
+Sprite "PKS2X0", 81, 80
+{
+	Offset -111, -88
+	Patch "PKS2I0", 0, 0
+}
+
+Sprite "PKS2Y0", 83, 103
+{
+	Offset -122, -83
+	Patch "PKS2D0", 0, 0
+}
+
+Sprite "PKS2Z0", 83, 103
+{
+	Offset -120, -87
+	Patch "PKS2D0", 0, 0
+}
+
+Sprite "PKSSA0", 76, 76
+{
+	Offset -128, -102
+	Patch "PKS2B0", 0, 0
+}
+
+Sprite "BKS2C0", 76, 76
+{
+	Offset -120, -94
+	Patch "BKS2B0", 0, 0
+}
+
+Sprite "BKS2E0", 83, 103
+{
+	Offset -94, -66
+	Patch "BKS2D0", 0, 0
+}
+
+Sprite "BKS2G0", 108, 130
+{
+	Offset -62, -44
+	Patch "BKS2F0", 0, 0
+}
+
+Sprite "BKS2W0", 81, 80
+{
+	Offset -121, -92
+	Patch "BKS2I0", 0, 0
+}
+
+Sprite "BKS2X0", 81, 80
+{
+	Offset -111, -88
+	Patch "BKS2I0", 0, 0
+}
+
+Sprite "BKS2Y0", 83, 103
+{
+	Offset -122, -83
+	Patch "BKS2D0", 0, 0
+}
+
+Sprite "BKS2Z0", 83, 103
+{
+	Offset -128, -87
+	Patch "BKS2D0", 0, 0
+}
+
+Sprite "BKSSA0", 76, 76
+{
+	Offset -128, -102
+	Patch "BKS2B0", 0, 0
+}
+
+Sprite "PKPLF0", 82, 83
+{
+	Offset -110, -90
+	Patch "PKPLC0", 0, 0
+}
+
+Sprite "PKPLG0", 89, 97
+{
+	Offset -94, -78
+	Patch "PKPLD0", 0, 0
+}
+
+Sprite "PKPLH0", 104, 111
+{
+	Offset -70, -63
+	Patch "PKPLE0", 0, 0
+}
+
+Sprite "BKPLF0", 82, 83
+{
+	Offset -110, -90
+	Patch "BKPLC0", 0, 0
+}
+
+Sprite "BKPLG0", 89, 97
+{
+	Offset -94, -78
+	Patch "BKPLD0", 0, 0
+}
+
+Sprite "BKPLH0", 104, 111
+{
+	Offset -70, -63
+	Patch "BKPLE0", 0, 0
+}
+
+Sprite "RIF2D0", 110, 112
+{
+	Offset -87, -119
+	Patch "RIF2C0", 0, 0
+}
+
+Sprite "RIF2F0", 92, 94
+{
+	Offset -99, -115
+	Patch "RIF2A0", 0, 0
+}
+
+Sprite "RIF2G0", 92, 94
+{
+	Offset -99, -113
+	Patch "RIF2A0", 0, 0
+}
+
+Sprite "RIF2H0", 92, 94
+{
+	Offset -99, -111
+	Patch "RIF2A0", 0, 0
+}
+
+Sprite "BIF2D0", 110, 112
+{
+	Offset -87, -119
+	Patch "BIF2C0", 0, 0
+}
+
+Sprite "BIF2F0", 92, 94
+{
+	Offset -99, -115
+	Patch "BIF2A0", 0, 0
+}
+
+Sprite "BIF2G0", 92, 94
+{
+	Offset -99, -113
+	Patch "BIF2A0", 0, 0
+}
+
+Sprite "BIF2H0", 92, 94
+{
+	Offset -99, -111
+	Patch "BIF2A0", 0, 0
+}
