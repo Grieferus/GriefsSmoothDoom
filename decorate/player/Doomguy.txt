@@ -10,7 +10,7 @@ ACTOR SDDoomPlayer : Doomplayer replaces Doomplayer
 	Player.WeaponSlot 5, SDRocketLauncher
 	Player.WeaponSlot 6, SDPlasmaRifle
 	Player.WeaponSlot 7, SDBFG9000
-	Player.ViewHeight 48
+	Player.ViewHeight 46
 	States
 	{
 	Spawn:
@@ -71,4 +71,5 @@ ACTOR SDBerserk : Berserk replaces Berserk
 		TNT1 A 0 A_SelectWeapon("SDFist")
 		Stop
 	}
+
 }
