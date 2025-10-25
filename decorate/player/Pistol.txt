@@ -22,7 +22,9 @@ ACTOR SDPistol : Pistol replaces Pistol
 		TNT1 A 0 A_FireBullets(5.6, 1, 1, 5, "BulletPuff")
 		TNT1 A 0 A_PlaySound("weapons/pistol",CHAN_WEAPON)
 		TNT1 A 0 A_GunFlash
-		PKPI BBCDEFGHICB 1
+		PKPI B 2
+		PKPI DF 2
+		PKPI GHIB 1
 		PKPI A 5 A_ReFire
 		Goto Ready
 	Flash:
@@ -129,4 +131,5 @@ ACTOR SDRifle : Pistol
 		BIF2 A 5
 		Goto Ready
 		}
+
 }
